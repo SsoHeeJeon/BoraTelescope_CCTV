@@ -124,6 +124,7 @@ public class GameManager : ContentsInfo
     public SelfiFunction selfifunction;
     public TouchUIObj touchuiobj;
     public Visitmanager visitmanager;
+    public TourismLite tourLite;
 
     /// <summary>
     /// °øÅë UI
@@ -1302,7 +1303,11 @@ public class GameManager : ContentsInfo
             case "TourismMode":
                 if (SceneManager.GetActiveScene().name.Contains("TourismMode"))
                 {
-
+                    if (ContentsInfo.ContentsName == "GoldSunset")
+                    {
+                        tourLite.AllRoute.SetActive(true);
+                        tourLite.AnnounceRoute.SetActive(false);
+                    }
                 }
                 else if (!SceneManager.GetActiveScene().name.Contains("TourismMode"))
                 {
@@ -1380,6 +1385,11 @@ public class GameManager : ContentsInfo
             //    labelmake.MapLabel();
             //    labelmake.NavigationText();
             //}
+
+            if (SceneManager.GetActiveScene().name.Contains("Tourism"))
+            {
+                tourLite.ChangeLang();
+            }
         }
         else if (SceneManager.GetActiveScene().name == "Loading")
         {
@@ -1776,6 +1786,13 @@ public class GameManager : ContentsInfo
             else
             {
                 visitmanager.OnCLickVisitBtn();
+            }
+        } else if (SceneManager.GetActiveScene().name.Contains("Tourism"))
+        {
+            if (ContentsInfo.ContentsName == "GoldSunset")
+            {
+                tourLite.AllRoute.SetActive(true);
+                tourLite.AnnounceRoute.SetActive(false);
             }
         }
     }

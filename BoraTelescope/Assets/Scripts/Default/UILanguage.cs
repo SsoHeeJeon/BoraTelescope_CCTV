@@ -23,6 +23,8 @@ public class UILanguage : MonoBehaviour
     public Image Tip_Btn_1;
     public Image Visit_Btn;
     public Image Visit_Btn_1;
+    public Image Tour_Btn;
+    public Image Tour_Btn_1;
 
     public Sprite Home_idle_K;
     public Sprite Live_idle_K;
@@ -41,6 +43,8 @@ public class UILanguage : MonoBehaviour
     public Sprite Tip_Select_K;
     public Sprite Visit_Idle_K;
     public Sprite Visit_Select_K;
+    public Sprite Tour_Idle_K;
+    public Sprite Tour_Select_K;
 
     public Sprite Home_idle_E;
     public Sprite Live_idle_E;
@@ -59,6 +63,8 @@ public class UILanguage : MonoBehaviour
     public Sprite Tip_Select_E;
     public Sprite Visit_Idle_E;
     public Sprite Visit_Select_E;
+    public Sprite Tour_Idle_E;
+    public Sprite Tour_Select_E;
 
     private void Start()
     {
@@ -91,6 +97,8 @@ public class UILanguage : MonoBehaviour
         Tip_Btn_1.sprite = Tip_Select_K;
         Visit_Btn.sprite = Visit_Idle_K;
         Visit_Btn_1.sprite = Visit_Select_K;
+        Tour_Btn.sprite = Tour_Idle_K;
+        Tour_Btn_1.sprite = Tour_Select_K;
 
         SetSize();
     }
@@ -114,6 +122,8 @@ public class UILanguage : MonoBehaviour
         Tip_Btn_1.sprite = Tip_Select_E;
         Visit_Btn.sprite = Visit_Idle_E;
         Visit_Btn_1.sprite = Visit_Select_E;
+        Tour_Btn.sprite = Tour_Idle_E;
+        Tour_Btn_1.sprite = Tour_Select_E;
 
         SetSize();
     }
@@ -137,6 +147,8 @@ public class UILanguage : MonoBehaviour
         Tip_Btn_1.SetNativeSize();
         Visit_Btn.SetNativeSize();
         Visit_Btn_1.SetNativeSize();
+        Tour_Btn.SetNativeSize();
+        Tour_Btn_1.SetNativeSize();
     }
 
     public void SetSel(GameObject btn)
@@ -221,6 +233,16 @@ public class UILanguage : MonoBehaviour
                 else if (GameManager.currentLang != GameManager.Language_enum.Korea)
                 {
                     btn.GetComponent<Image>().sprite = Visit_Select_E;
+                }
+                break;
+            case "TourismMode":
+                if (GameManager.currentLang == GameManager.Language_enum.Korea)
+                {
+                    btn.GetComponent<Image>().sprite = Tour_Select_K;
+                }
+                else if (GameManager.currentLang != GameManager.Language_enum.Korea)
+                {
+                    btn.GetComponent<Image>().sprite = Tour_Select_E;
                 }
                 break;
         }
@@ -308,6 +330,16 @@ public class UILanguage : MonoBehaviour
                 else if (GameManager.currentLang != GameManager.Language_enum.Korea)
                 {
                     btn.GetComponent<Image>().sprite = Visit_Idle_E;
+                }
+                break;
+            case "TourismMode":
+                if (GameManager.currentLang == GameManager.Language_enum.Korea)
+                {
+                    btn.GetComponent<Image>().sprite = Tour_Idle_K;
+                }
+                else if (GameManager.currentLang != GameManager.Language_enum.Korea)
+                {
+                    btn.GetComponent<Image>().sprite = Tour_Idle_E;
                 }
                 break;
         }

@@ -96,11 +96,11 @@ public class CCTVViewer : MonoBehaviour
 
     public void SpinCam()
     {
-        var processList = System.Diagnostics.Process.GetProcessesByName("SunAPITest");
-        if (processList.Length == 0)
-        {
-            System.Diagnostics.Process.Start(@"C:\BoraCCTVCam\SunAPITest.exe");
-        }
+        //var processList = System.Diagnostics.Process.GetProcessesByName("SunAPITest");
+        //if (processList.Length == 0)
+        //{
+        //    System.Diagnostics.Process.Start(@"C:\BoraCCTVCam\SunAPITest.exe");
+        //}
 
         if (Client == null)
             Client = new TcpClient(serverIP, port);

@@ -21,7 +21,7 @@ public class TourismMode : LabelName
     {
         switch (ContentsInfo.ContentsName)
         {
-            case "EndIsland":
+            case "GoldSunset":
                 //clearmode = GameObject.FindGameObjectWithTag("ClearMode").GetComponent<ClearMode>();
                 //gamemanager.labeldetail = clearmode.GetComponent<LabelDetail>();
                 gamemanager.UI_All.gameObject.SetActive(true);

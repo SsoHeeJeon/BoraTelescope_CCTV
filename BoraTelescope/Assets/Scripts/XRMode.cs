@@ -154,11 +154,11 @@ public class XRMode : MonoBehaviour
 
         CameraWindow.transform.localPosition = new Vector3(currentMotor_x * ValueX, currentMotor_y * ValueY, 0);
 
-        if(playtime >= 3600)
-        {
-            NoticeWindow.NoticeWindowOpen("PantiltOrigin");
-            playtime = 0;
-        }
+        //if(playtime >= 3600)
+        //{
+        //    NoticeWindow.NoticeWindowOpen("PantiltOrigin");
+        //    playtime = 0;
+        //}
         /*
         if ((float)camerazoom.zoomFactor <= 4)
         {
@@ -197,6 +197,14 @@ public class XRMode : MonoBehaviour
             AllMapLabels.SetActive(false);
             AllMapLabels.transform.parent.GetChild(1).gameObject.SetActive(false);
         }*/
+
+        if (AllMapLabels.transform.GetChild(0).transform.GetChild(2).gameObject.transform.localScale.x != cctvcontrol.zoomFactor*7)
+        {
+            for (int index = 0; index < AllMapLabels.transform.childCount; index++)
+            {
+                AllMapLabels.transform.GetChild(index).transform.GetChild(2).gameObject.transform.localScale = Vector3.Lerp(AllMapLabels.transform.GetChild(index).transform.GetChild(2).gameObject.transform.localScale, new Vector3(cctvcontrol.zoomFactor*7, cctvcontrol.zoomFactor * 7, cctvcontrol.zoomFactor * 7), Time.deltaTime);
+            }
+        }
         touchcount_int = Input.touchCount;
 
         if (touchcount_int >= 2)

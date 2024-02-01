@@ -68,35 +68,35 @@ public class ContentsInfo : LogSendServer
         switch (ContentsName)
         {
             case "GoldSunset":
-                GoldSunsuetLabel.LoadLabelInfo();
+                GoldSunsetLabel.LoadLabelInfo();
 
                 WriteLog(LogSendServer.NormalLogCode.Load_ResourceFile, "Load_ResourceFile", GetType().ToString());
-                label_open.Label_total = GoldSunsuetLabel.Label_total;
-                label_open.Label_Cate_1 = GoldSunsuetLabel.Label_Cate_1;
-                label_open.Label_Cate_2 = GoldSunsuetLabel.Label_Cate_2;
+                label_open.Label_total = GoldSunsetLabel.Label_total;
+                label_open.Label_Cate_1 = GoldSunsetLabel.Label_Cate_1;
+                label_open.Label_Cate_2 = GoldSunsetLabel.Label_Cate_2;
 
-                label_open.NaviLabel = (Sprite[])GoldSunsuetLabel.NaviLabel.Clone();
-                label_open.MapLabel = (Sprite[])GoldSunsuetLabel.MapLabel.Clone();
-                //label_open.NaviLabel_C = (Sprite[])GoldSunsuetLabel.NaviLabel_C.Clone();
-                //label_open.NaviLabel_J = (Sprite[])GoldSunsuetLabel.NaviLabel_J.Clone();
-                label_open.DetailImage = (Sprite[])GoldSunsuetLabel.DetailImage.Clone();
-                label_open.Narration_K = (AudioClip[])GoldSunsuetLabel.Narration_K.Clone();
-                label_open.Narration_E = (AudioClip[])GoldSunsuetLabel.Narration_E.Clone();
-                label_open.Narration_C = (AudioClip[])GoldSunsuetLabel.Narration_C.Clone();
-                label_open.Narration_J = (AudioClip[])GoldSunsuetLabel.Narration_J.Clone();
+                label_open.NaviLabel = (Sprite[])GoldSunsetLabel.NaviLabel.Clone();
+                label_open.MapLabel = (Sprite[])GoldSunsetLabel.MapLabel.Clone();
+                //label_open.NaviLabel_C = (Sprite[])GoldSunsetLabel.NaviLabel_C.Clone();
+                //label_open.NaviLabel_J = (Sprite[])GoldSunsetLabel.NaviLabel_J.Clone();
+                label_open.DetailImage = (Sprite[])GoldSunsetLabel.DetailImage.Clone();
+                label_open.Narration_K = (AudioClip[])GoldSunsetLabel.Narration_K.Clone();
+                label_open.Narration_E = (AudioClip[])GoldSunsetLabel.Narration_E.Clone();
+                label_open.Narration_C = (AudioClip[])GoldSunsetLabel.Narration_C.Clone();
+                label_open.Narration_J = (AudioClip[])GoldSunsetLabel.Narration_J.Clone();
 
-                gamemanager.minimap.Hotspot = GoldSunsuetLabel.Label_Minimap;
-                gamemanager.minimap.hotspot_img = (Sprite[])GoldSunsuetLabel.MinimapLabel.Clone();
-                ScreenCapture.MarkImg = GoldSunsuetLabel.CaptureMark;
+                gamemanager.minimap.Hotspot = GoldSunsetLabel.Label_Minimap;
+                gamemanager.minimap.hotspot_img = (Sprite[])GoldSunsetLabel.MinimapLabel.Clone();
+                ScreenCapture.MarkImg = GoldSunsetLabel.CaptureMark;
 
-                label_open.Tip_K = GoldSunsuetLabel.Tip_K;
-                label_open.Tip_E = GoldSunsuetLabel.Tip_E;
-                label_open.Tip_C = GoldSunsuetLabel.Tip_C;
-                label_open.Tip_J = GoldSunsuetLabel.Tip_J;
+                label_open.Tip_K = GoldSunsetLabel.Tip_K;
+                label_open.Tip_E = GoldSunsetLabel.Tip_E;
+                label_open.Tip_C = GoldSunsetLabel.Tip_C;
+                label_open.Tip_J = GoldSunsetLabel.Tip_J;
 
-                WaitingVideo_path = (string[])GoldSunsuetLabel.WaitingVideo_path.Clone();
+                WaitingVideo_path = (string[])GoldSunsetLabel.WaitingVideo_path.Clone();
 
-                ModeActive = new bool[GoldSunsuetLabel.ModeActive.Length];
+                ModeActive = new bool[GoldSunsetLabel.ModeActive.Length];
                 break;
             
         }

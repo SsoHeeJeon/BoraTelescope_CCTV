@@ -22164,7 +22164,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7645175908755650649}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -29594,6 +29594,7 @@ MonoBehaviour:
   selfifunction: {fileID: 949206934208709959}
   touchuiobj: {fileID: 7645175909506355290}
   visitmanager: {fileID: 0}
+  tourLite: {fileID: 0}
   UI_All: {fileID: 7645175908287184480}
   Homebtn: {fileID: 7645175908571142283}
   NavigationBar: {fileID: 7645175908700862681}
@@ -30152,6 +30153,8 @@ MonoBehaviour:
   Tip_Btn_1: {fileID: 7645175908062172278}
   Visit_Btn: {fileID: 7645175909758709042}
   Visit_Btn_1: {fileID: 7645175909301586880}
+  Tour_Btn: {fileID: 7645175909616094281}
+  Tour_Btn_1: {fileID: 7645175908664346913}
   Home_idle_K: {fileID: 4473901045339456086, guid: 68ddc0f63c6d12d40903a5e2f2de07fa, type: 3}
   Live_idle_K: {fileID: -6947073181933661839, guid: 68ddc0f63c6d12d40903a5e2f2de07fa, type: 3}
   Live_Select_K: {fileID: -8598382364314345149, guid: 68ddc0f63c6d12d40903a5e2f2de07fa, type: 3}
@@ -30169,6 +30172,8 @@ MonoBehaviour:
   Tip_Select_K: {fileID: 5679668621834388996, guid: 68ddc0f63c6d12d40903a5e2f2de07fa, type: 3}
   Visit_Idle_K: {fileID: 5468511922979022990, guid: e6dd03de8f8d88b4c97ee8a4e13f5c13, type: 3}
   Visit_Select_K: {fileID: -1917558307928841353, guid: e6dd03de8f8d88b4c97ee8a4e13f5c13, type: 3}
+  Tour_Idle_K: {fileID: 8696976360866318676, guid: 68ddc0f63c6d12d40903a5e2f2de07fa, type: 3}
+  Tour_Select_K: {fileID: -2602255216263057650, guid: 68ddc0f63c6d12d40903a5e2f2de07fa, type: 3}
   Home_idle_E: {fileID: 5673767212160281711, guid: 68ddc0f63c6d12d40903a5e2f2de07fa, type: 3}
   Live_idle_E: {fileID: -6791774708163041865, guid: 68ddc0f63c6d12d40903a5e2f2de07fa, type: 3}
   Live_Select_E: {fileID: 3606891080145708120, guid: 68ddc0f63c6d12d40903a5e2f2de07fa, type: 3}
@@ -30186,6 +30191,8 @@ MonoBehaviour:
   Tip_Select_E: {fileID: -6198716147808226896, guid: 68ddc0f63c6d12d40903a5e2f2de07fa, type: 3}
   Visit_Idle_E: {fileID: 2528085065372282093, guid: e6dd03de8f8d88b4c97ee8a4e13f5c13, type: 3}
   Visit_Select_E: {fileID: -6229381147744610114, guid: e6dd03de8f8d88b4c97ee8a4e13f5c13, type: 3}
+  Tour_Idle_E: {fileID: 3906383846236874890, guid: 68ddc0f63c6d12d40903a5e2f2de07fa, type: 3}
+  Tour_Select_E: {fileID: 410823861413856306, guid: 68ddc0f63c6d12d40903a5e2f2de07fa, type: 3}
 --- !u!222 &7645175909591202907
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -30603,7 +30610,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7645175909616094274}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -31646,7 +31653,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7645175909758709041}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -34892,7 +34899,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7645175910109869232}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 

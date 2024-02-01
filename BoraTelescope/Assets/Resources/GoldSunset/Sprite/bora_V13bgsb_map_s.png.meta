@@ -1,0 +1,1221 @@
+fileFormatVersion: 2
+guid: 76b7991b69665954ca1f9f882c690ab8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6832453174039506821
+    second: bora_V13bgsb_map_s_0
+  - first:
+      213: 6065252847754088212
+    second: bora_V13bgsb_map_s_1
+  - first:
+      213: 4981390846844150076
+    second: bora_V13bgsb_map_s_2
+  - first:
+      213: 7962555808235186133
+    second: bora_V13bgsb_map_s_3
+  - first:
+      213: 6076496229909086831
+    second: bora_V13bgsb_map_s_4
+  - first:
+      213: -1126571936448280678
+    second: bora_V13bgsb_map_s_5
+  - first:
+      213: -2020046113102433101
+    second: bora_V13bgsb_map_s_7
+  - first:
+      213: 4199403704213252745
+    second: bora_V13bgsb_map_s_8
+  - first:
+      213: 1619578914129796393
+    second: bora_V13bgsb_map_s_9
+  - first:
+      213: -4073249421968428859
+    second: bora_V13bgsb_map_s_10
+  - first:
+      213: 161929527598336568
+    second: bora_V13bgsb_map_s_11
+  - first:
+      213: 3089053672590165049
+    second: bora_V13bgsb_map_s_12
+  - first:
+      213: -5943484771113253907
+    second: bora_V13bgsb_map_s_13
+  - first:
+      213: -6874154384987011463
+    second: bora_V13bgsb_map_s_14
+  - first:
+      213: -8445633532259148406
+    second: bora_V13bgsb_map_s_15
+  - first:
+      213: 4477102656297460956
+    second: bora_V13bgsb_map_s_16
+  - first:
+      213: 794101066228168624
+    second: bora_V13bgsb_map_s_18
+  - first:
+      213: 6361130791248405740
+    second: bora_V13bgsb_map_s_19
+  - first:
+      213: -6670842001195291605
+    second: bora_V13bgsb_map_s_20
+  - first:
+      213: -7048872502661462929
+    second: bora_V13bgsb_map_s_21
+  - first:
+      213: -6161416360101678906
+    second: bora_V13bgsb_map_s_22
+  - first:
+      213: -3643751210852397122
+    second: bora_V13bgsb_map_s_23
+  - first:
+      213: -7718964818815244167
+    second: bora_V13bgsb_map_s_24
+  - first:
+      213: 4134506062628954895
+    second: bora_V13bgsb_map_s_25
+  - first:
+      213: -5050215735474048177
+    second: bora_V13bgsb_map_s_26
+  - first:
+      213: -462625988739487911
+    second: bora_V13bgsb_map_s_27
+  - first:
+      213: 3438916821968511066
+    second: bora_V13bgsb_map_s_29
+  - first:
+      213: -1612137769588215390
+    second: bora_V13bgsb_map_s_30
+  - first:
+      213: -1958936293750117907
+    second: bora_V13bgsb_map_s_31
+  - first:
+      213: -3130736408680713702
+    second: bora_V13bgsb_map_s_32
+  - first:
+      213: -7477085478579143000
+    second: bora_V13bgsb_map_s_33
+  - first:
+      213: -7346641377722472391
+    second: bora_V13bgsb_map_s_34
+  - first:
+      213: -6451789839213850155
+    second: bora_V13bgsb_map_s_35
+  - first:
+      213: 3098032887638125328
+    second: bora_V13bgsb_map_s_36
+  - first:
+      213: 6979328405849051163
+    second: bora_V13bgsb_map_s_37
+  - first:
+      213: 3371572046477836912
+    second: bora_V13bgsb_map_s_38
+  - first:
+      213: -7041436586037146791
+    second: bora_V13bgsb_map_s_39
+  - first:
+      213: -4759479776084757547
+    second: bora_V13bgsb_map_s_40
+  - first:
+      213: 8437270358478311961
+    second: bora_V13bgsb_map_s_41
+  - first:
+      213: 5019176591124784297
+    second: bora_V13bgsb_map_s_6
+  - first:
+      213: -683394167824867995
+    second: bora_V13bgsb_map_s_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 7972
+        width: 1360
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f6d1f36ffb1de50800000000000000
+      internalID: 6832453174039506821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 7772
+        width: 1360
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41f0f47745b1c2450800000000000000
+      internalID: 6065252847754088212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 7638
+        width: 140
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3127892594712540800000000000000
+      internalID: 4981390846844150076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_3
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 7678
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d7e416f15ea08e60800000000000000
+      internalID: 7962555808235186133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_4
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 7738
+        width: 1128
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f624bbe502d045450800000000000000
+      internalID: 6076496229909086831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_5
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 7722
+        width: 60
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97831aeacc9d50f0800000000000000
+      internalID: -1126571936448280678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_7
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 7659
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4fe9643ca57f3e0800000000000000
+      internalID: -2020046113102433101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_8
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 7659
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a271a6b67474a30800000000000000
+      internalID: 4199403704213252745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_9
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 7659
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d5b660176e97610800000000000000
+      internalID: 1619578914129796393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_10
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 7659
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0b1025b39e877c0800000000000000
+      internalID: -4073249421968428859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_11
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 7659
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a45232c0a4f3200800000000000000
+      internalID: 161929527598336568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_12
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 7659
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9344aded2f58eda20800000000000000
+      internalID: 3089053672590165049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_13
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 7504
+        width: 140
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de3c9d13710848da0800000000000000
+      internalID: -5943484771113253907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_14
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 7552
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 976c7a7f1091a90a0800000000000000
+      internalID: -6874154384987011463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_15
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 7612
+        width: 1128
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8dd09e9c051bca80800000000000000
+      internalID: -8445633532259148406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_16
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 7596
+        width: 60
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd4619b252dd12e30800000000000000
+      internalID: 4477102656297460956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_18
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 7533
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7f94066b6350b00800000000000000
+      internalID: 794101066228168624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_19
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 7533
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4292e70c6474850800000000000000
+      internalID: 6361130791248405740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_20
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 7533
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2caff52b886c63a0800000000000000
+      internalID: -6670842001195291605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_21
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 7533
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6448db2ecf5d2e90800000000000000
+      internalID: -7048872502661462929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_22
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 7533
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c0fbde07704e7aa0800000000000000
+      internalID: -6161416360101678906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_23
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 7533
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf4e33449bce6dc0800000000000000
+      internalID: -3643751210852397122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_24
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 7426
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 978a7c4e46ab0e490800000000000000
+      internalID: -7718964818815244167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_25
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 7486
+        width: 1128
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f03a2b0cb57b06930800000000000000
+      internalID: 4134506062628954895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_26
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 7470
+        width: 60
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f433bf7bb870ae9b0800000000000000
+      internalID: -5050215735474048177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_27
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 7370
+        width: 140
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957a1554d1c6499f0800000000000000
+      internalID: -462625988739487911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_29
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 7407
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a506c8121ac79bf20800000000000000
+      internalID: 3438916821968511066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_30
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 7407
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a134b27d3980a9e0800000000000000
+      internalID: -1612137769588215390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_31
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 7407
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de96769d1d570d4e0800000000000000
+      internalID: -1958936293750117907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_32
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 7407
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12343bd2d36d84d0800000000000000
+      internalID: -3130736408680713702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_33
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 7407
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aefe0e5f5e0c3890800000000000000
+      internalID: -7477085478579143000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_34
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 7407
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9386aa4579c7b0a90800000000000000
+      internalID: -7346641377722472391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_35
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 6568
+        width: 1360
+        height: 744
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d11f240353a676a0800000000000000
+      internalID: -6451789839213850155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_36
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 5708
+        width: 1632
+        height: 820
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01be52a4f7c6efa20800000000000000
+      internalID: 3098032887638125328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_37
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 5312
+        width: 274
+        height: 357
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b101d61053e8bd060800000000000000
+      internalID: 6979328405849051163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_38
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 5421
+        width: 94
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 072c2f4b9ea3ace20800000000000000
+      internalID: 3371572046477836912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_39
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 5363
+        width: 327
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95b01dc6bbac74e90800000000000000
+      internalID: -7041436586037146791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_40
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 5317
+        width: 267
+        height: 348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d3ffc64c5ee2fdb0800000000000000
+      internalID: -4759479776084757547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_41
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 5351
+        width: 207
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 912580f30b4371570800000000000000
+      internalID: 8437270358478311961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_42
+      rect:
+        serializedVersion: 2
+        x: 1683
+        y: 5407
+        width: 170
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6a25413519bf080800000000000000
+      internalID: -9152562031691127115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_43
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 4556
+        width: 812
+        height: 632
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5667b5a8ea512fb0800000000000000
+      internalID: -4674354982974691750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_44
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 4906
+        width: 468
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188b70a693dc02e80800000000000000
+      internalID: -8205332874593322879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_45
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 3696
+        width: 1632
+        height: 820
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b541bca58692d9740800000000000000
+      internalID: 5160326276213052507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_48
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 3142
+        width: 140
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a7dfcdf3a6b5bf80800000000000000
+      internalID: -8091360340047046744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_59
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 3008
+        width: 140
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e520189a6396110800000000000000
+      internalID: 1254594072841182738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bora_V13bgsb_map_s_73
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 2874
+        width: 140
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196618a8cf8836d70800000000000000
+      internalID: 9035215895672219281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 16ef53dd3f14ce346b99608d49ae8a23
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

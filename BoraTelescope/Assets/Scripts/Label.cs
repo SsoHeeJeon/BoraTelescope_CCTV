@@ -256,6 +256,101 @@ public class Label : Category
                             }
                         }
                     }
+                } else if (SceneManager.GetActiveScene().name.Contains("Tourism"))
+                {
+                    for (int index = Label_total.Count; index < Title_K.Length; index++)
+                    {
+                        if (SetObject != null)
+                        {
+                            if (Title_K[index] == gamemanager.tourLite.clicknaviobj)
+                            {
+                                gamemanager.labeldetail.Detail_LabelImage.sprite = DetailImage[index];
+                                switch (GameManager.currentLang)
+                                {
+                                    case GameManager.Language_enum.Korea:
+                                        gamemanager.labeldetail.TitleDetail.text = Title_K[index];
+                                        gamemanager.labeldetail.TitleDetail.font = Detailfont_KE;
+                                        gamemanager.labeldetail.TitleDetail.fontSize = 30;
+                                        gamemanager.labeldetail.SubTitleDetail.text = Title_E[index];
+                                        gamemanager.labeldetail.SubTitleDetail.font = Detailfont_KE;
+                                        if (Title_E[index].Length < 25)
+                                        {
+                                            gamemanager.labeldetail.SubTitleDetail.fontSize = 24;
+                                        }
+                                        else if (Title_E[index].Length >= 25)
+                                        {
+                                            gamemanager.labeldetail.SubTitleDetail.fontSize = 20;
+                                        }
+                                        gamemanager.labeldetail.InfoHeight.GetComponent<Text>().text = DetailTexts_K[index];
+                                        gamemanager.labeldetail.InfoHeight.GetComponent<Text>().font = Detailfont_KE;
+                                        Narration.clip = Narration_K[index];
+                                        break;
+                                    case GameManager.Language_enum.English:
+                                        gamemanager.labeldetail.TitleDetail.text = Title_E[index];
+                                        gamemanager.labeldetail.TitleDetail.font = Detailfont_KE;
+                                        if (Title_E[index].Length < 25)
+                                        {
+                                            gamemanager.labeldetail.TitleDetail.fontSize = 30;
+                                        }
+                                        else if (Title_E[index].Length >= 25)
+                                        {
+                                            gamemanager.labeldetail.TitleDetail.fontSize = 26;
+                                        }
+
+                                        gamemanager.labeldetail.SubTitleDetail.text = Title_K[index];
+                                        gamemanager.labeldetail.SubTitleDetail.font = Detailfont_KE;
+                                        gamemanager.labeldetail.SubTitleDetail.fontSize = 24;
+                                        gamemanager.labeldetail.InfoHeight.GetComponent<Text>().text = DetailTexts_E[index];
+                                        gamemanager.labeldetail.InfoHeight.GetComponent<Text>().font = Detailfont_KE;
+                                        Narration.clip = Narration_E[index];
+                                        break;
+                                    case GameManager.Language_enum.Chinese:
+                                        gamemanager.labeldetail.TitleDetail.text = Title_C[index];
+                                        gamemanager.labeldetail.TitleDetail.font = Detailfont_CJ;
+                                        gamemanager.labeldetail.TitleDetail.fontSize = 30;
+                                        gamemanager.labeldetail.SubTitleDetail.text = Title_E[index];
+                                        gamemanager.labeldetail.SubTitleDetail.font = Detailfont_KE;
+                                        if (Title_E[index].Length < 25)
+                                        {
+                                            gamemanager.labeldetail.SubTitleDetail.fontSize = 24;
+                                        }
+                                        else if (Title_E[index].Length >= 25)
+                                        {
+                                            gamemanager.labeldetail.SubTitleDetail.fontSize = 20;
+                                        }
+                                        gamemanager.labeldetail.InfoHeight.GetComponent<Text>().text = DetailTexts_C[index];
+                                        gamemanager.labeldetail.InfoHeight.GetComponent<Text>().font = Detailfont_CJ;
+                                        Narration.clip = Narration_C[index];
+                                        break;
+                                    case GameManager.Language_enum.Japanese:
+                                        gamemanager.labeldetail.TitleDetail.text = Title_J[index];
+                                        gamemanager.labeldetail.TitleDetail.font = Detailfont_CJ;
+                                        if (Title_J[index].Length < 15)
+                                        {
+                                            gamemanager.labeldetail.TitleDetail.fontSize = 30;
+                                        }
+                                        else if (Title_J[index].Length >= 15)
+                                        {
+                                            gamemanager.labeldetail.TitleDetail.fontSize = 22;
+                                        }
+                                        gamemanager.labeldetail.SubTitleDetail.text = Title_E[index];
+                                        gamemanager.labeldetail.SubTitleDetail.font = Detailfont_KE;
+                                        if (Title_E[index].Length < 25)
+                                        {
+                                            gamemanager.labeldetail.SubTitleDetail.fontSize = 24;
+                                        }
+                                        else if (Title_E[index].Length >= 25)
+                                        {
+                                            gamemanager.labeldetail.SubTitleDetail.fontSize = 20;
+                                        }
+                                        gamemanager.labeldetail.InfoHeight.GetComponent<Text>().text = DetailTexts_J[index];
+                                        gamemanager.labeldetail.InfoHeight.GetComponent<Text>().font = Detailfont_CJ;
+                                        Narration.clip = Narration_J[index];
+                                        break;
+                                }
+                            }
+                        }
+                    }
                 }
                 gamemanager.labeldetail.ChangeDetailLanguage();
             }

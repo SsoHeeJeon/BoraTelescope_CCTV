@@ -71,8 +71,13 @@ public class LabelDetail : VideoDetail
         gamemanager.label.Narration.clip = null;
         gamemanager.label.PlayNarr = true;
         gamemanager.label.Narration.Stop();
-
-        Detail_Background.transform.localPosition = new Vector3(Detail_Close_x, Detail_y, 0);
+        if (!SceneManager.GetActiveScene().name.Contains("Tourism"))
+        {
+            if (ContentsInfo.ContentsName == "GoldSunset")
+            {
+                Detail_Background.transform.localPosition = new Vector3(Detail_Close_x, Detail_y, 0);
+            }
+        }
     }
 
     // Update is called once per frame
@@ -84,12 +89,16 @@ public class LabelDetail : VideoDetail
         
         if(SeeLabelDetail == true)
         {
-            if(SeeDetail_Open == true)
+            if (!SceneManager.GetActiveScene().name.Contains("Tourism"))
             {
-                DetailWindow_Open();
-            } else if(SeeDetail_Open == false)
-            {
-                DetailWindow_Close();
+                if (SeeDetail_Open == true)
+                {
+                    DetailWindow_Open();
+                }
+                else if (SeeDetail_Open == false)
+                {
+                    DetailWindow_Close();
+                }
             }
         }
 
@@ -151,14 +160,14 @@ public class LabelDetail : VideoDetail
 
         if (moredetail == false)
         {
-            if (InfoImageHeight <= 197)
-            {
-                DetailMore_but.gameObject.SetActive(false);
-            }
-            else
-            {
-                DetailMore_but.gameObject.SetActive(true);
-            }
+            //if (InfoImageHeight <= 197)
+            //{
+            //    DetailMore_but.gameObject.SetActive(false);
+            //}
+            //else
+            //{
+            //    DetailMore_but.gameObject.SetActive(true);
+            //}
         } else if (moredetail == true)
         {
             InfoImageHeight = InfoHeight.GetComponent<RectTransform>().rect.height;

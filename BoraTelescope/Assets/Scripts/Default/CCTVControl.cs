@@ -74,6 +74,9 @@ namespace SunAPITest
 
             gamemanager.xrmode.Resetothers();
 
+            //UseUrl = "http://" + url + "/stw-cgi/ptzcontrol.cgi?msubmenu=move&action=control&Direction=" + gamemanager.MoveDir.ToString();
+            //httpRequest.Request("GET", UseUrl, uid, pwd);
+
             switch (gamemanager.MoveDir)
             {
                 case "Left":

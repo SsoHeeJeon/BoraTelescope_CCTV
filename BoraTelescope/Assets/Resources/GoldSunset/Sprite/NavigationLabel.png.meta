@@ -4,25 +4,25 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -3927660608520130595
-    second: NavigationLabel_02
+    second: NavigationLabel_0
   - first:
       213: 8885476736063808410
-    second: NavigationLabel_05
+    second: NavigationLabel_1
   - first:
       213: -513432529943635620
-    second: NavigationLabel_00
+    second: NavigationLabel_2
   - first:
       213: 6428442061037043226
-    second: NavigationLabel_03
+    second: NavigationLabel_3
   - first:
       213: 7639947720977232951
-    second: NavigationLabel_04
+    second: NavigationLabel_4
   - first:
       213: -7867262764122509241
-    second: NavigationLabel_01
+    second: NavigationLabel_5
   - first:
       213: -1174499133438584552
-    second: NavigationLabel_00
+    second: NavigationLabel_2
   - first:
       213: 7332586484725379906
     second: NavigationLabel_7
@@ -84,7 +84,7 @@ TextureImporter:
       213: -8571491190957900461
     second: NavigationLabel_26
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -101,12 +101,10 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -145,8 +143,6 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
-  swizzle: 50462976
-  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -158,7 +154,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -171,7 +166,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -184,7 +178,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -197,7 +190,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -210,14 +202,13 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NavigationLabel_02
+      name: NavigationLabel_0
       rect:
         serializedVersion: 2
         x: 20
@@ -225,7 +216,7 @@ TextureImporter:
         width: 60
         height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -238,7 +229,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NavigationLabel_05
+      name: NavigationLabel_1
       rect:
         serializedVersion: 2
         x: 20
@@ -246,7 +237,7 @@ TextureImporter:
         width: 60
         height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -259,7 +250,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NavigationLabel_03
+      name: NavigationLabel_3
       rect:
         serializedVersion: 2
         x: 20
@@ -267,7 +258,7 @@ TextureImporter:
         width: 60
         height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -280,7 +271,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NavigationLabel_04
+      name: NavigationLabel_4
       rect:
         serializedVersion: 2
         x: 20
@@ -288,7 +279,7 @@ TextureImporter:
         width: 60
         height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -301,7 +292,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NavigationLabel_01
+      name: NavigationLabel_5
       rect:
         serializedVersion: 2
         x: 20
@@ -309,7 +300,7 @@ TextureImporter:
         width: 60
         height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -322,7 +313,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NavigationLabel_00
+      name: NavigationLabel_6
       rect:
         serializedVersion: 2
         x: 20
@@ -330,20 +321,20 @@ TextureImporter:
         width: 60
         height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 819936ac24753bfe0800000000000000
-      internalID: -513432529943635620
+      internalID: -1174499133438584552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NavigationLabel_06
+      name: NavigationLabel_2
       rect:
         serializedVersion: 2
         x: 20
@@ -351,14 +342,14 @@ TextureImporter:
         width: 60
         height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: c59549495dbefd8f0800000000000000
-      internalID: -6529504769565237654
+      internalID: -513432529943635620
       vertices: []
       indices: 
       edges: []
@@ -367,8 +358,8 @@ TextureImporter:
       name: NavigationLabel_7
       rect:
         serializedVersion: 2
-        x: 22
-        y: 1398
+        x: 20
+        y: 1408
         width: 60
         height: 60
       alignment: 0
@@ -384,69 +375,6 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: NavigationLabel_8
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 1232
-        width: 60
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac93ffdbb81e9fcd0800000000000000
-      internalID: -2523738125860128310
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NavigationLabel_9
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 1042
-        width: 60
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b1e54b5c234eee4e0800000000000000
-      internalID: -1950370681888416229
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NavigationLabel_10
-      rect:
-        serializedVersion: 2
-        x: 90
-        y: 873
-        width: 60
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5389eaa0ffbc047c0800000000000000
-      internalID: -4089044165396096971
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -457,20 +385,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      NavigationLabel_00: -513432529943635620
-      NavigationLabel_01: -7867262764122509241
-      NavigationLabel_02: -3927660608520130595
-      NavigationLabel_03: 6428442061037043226
-      NavigationLabel_04: 7639947720977232951
-      NavigationLabel_05: 8885476736063808410
-      NavigationLabel_06: -6529504769565237654
-      NavigationLabel_10: -4089044165396096971
-      NavigationLabel_7: 7332586484725379906
-      NavigationLabel_8: -2523738125860128310
-      NavigationLabel_9: -1950370681888416229
-  mipmapLimitGroupName: 
+  spritePackingTag: 
   pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

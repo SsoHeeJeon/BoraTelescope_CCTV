@@ -18,6 +18,7 @@ public class MinimapCustom : MonoBehaviour
 
     public void SettingHotspot()
     {
+        /*
         if (Hotspot_parent.gameObject.transform.childCount > 0)
         {
             for (int index = Hotspot_parent.gameObject.transform.childCount - 1; index >= 0; index--)
@@ -25,6 +26,7 @@ public class MinimapCustom : MonoBehaviour
                 Destroy(Hotspot_parent.gameObject.transform.GetChild(index).gameObject);
             }
         }
+
 
         // 미니맵 위에 주요지점 버튼 생성
         for (int index = 0; index < Hotspot.Count; index++)
@@ -68,6 +70,7 @@ public class MinimapCustom : MonoBehaviour
                 }
             }
         }
+        */
     }
 
     public void SelectHotspot(GameObject btn)
