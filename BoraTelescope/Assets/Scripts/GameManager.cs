@@ -1303,6 +1303,7 @@ public class GameManager : ContentsInfo
             case "TourismMode":
                 if (SceneManager.GetActiveScene().name.Contains("TourismMode"))
                 {
+                    gamemanager.label.Narration.Stop();
                     if (ContentsInfo.ContentsName == "GoldSunset")
                     {
                         tourLite.AllRoute.SetActive(true);
@@ -1791,6 +1792,7 @@ public class GameManager : ContentsInfo
         {
             if (ContentsInfo.ContentsName == "GoldSunset")
             {
+                gamemanager.label.Narration.Stop();
                 tourLite.AllRoute.SetActive(true);
                 tourLite.AnnounceRoute.SetActive(false);
             }

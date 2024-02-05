@@ -31,7 +31,8 @@ public class Loading : MonoBehaviour
             if (File.Exists(Application.dataPath + ("/XRModeLabelPosition_" + ContentsInfo.ContentsName + ".json")))
             {
                 gamemanager.WriteLog(LogSendServer.NormalLogCode.Load_ARModeLabelPosition, "Load_XRModeLabelPosition", GetType().ToString());
-            } else
+            }
+            else
             {
                 gamemanager.WriteErrorLog(LogSendServer.ErrorLogCode.UnLoad_ARModeLabelPosition, "UnLoad_XRModeLabelPosition", GetType().ToString());
                 GameManager.AnyError = true;

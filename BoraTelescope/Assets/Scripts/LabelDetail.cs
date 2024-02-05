@@ -39,7 +39,7 @@ public class LabelDetail : VideoDetail
     public bool moredetail_scroll = false;
     public bool CheckDetailTime = false;
     float checkdetail;
-    float scrollview_y = 217;
+    float scrollview_y = 315;
     //float scrollview_y = 179;
 
     bool detailOfflog = false;
@@ -125,7 +125,7 @@ public class LabelDetail : VideoDetail
         {
             if (moredetail_scroll == false)
             {
-                Detail_ScrollView.GetComponent<ScrollRect>().enabled = false;
+                //Detail_ScrollView.GetComponent<ScrollRect>().enabled = false;
                 Detail_Scrollbar.gameObject.SetActive(false);
             }
 
@@ -133,9 +133,9 @@ public class LabelDetail : VideoDetail
         }
         else if (moredetail == false)
         {
-            Detail_ScrollView.GetComponent<ScrollRect>().enabled = false;
+            //Detail_ScrollView.GetComponent<ScrollRect>().enabled = false;
             Detail_Scrollbar.gameObject.SetActive(false);
-            Detail_Viewport.GetComponent<RectTransform>().offsetMax = new Vector2(17, 0);
+            //Detail_Viewport.GetComponent<RectTransform>().offsetMax = new Vector2(17, 0);
 
             OriginMoreDetail();
         }

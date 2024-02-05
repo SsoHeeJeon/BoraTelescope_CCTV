@@ -105,7 +105,7 @@ public class CheckingView : MonoBehaviour
         Mat output = new Mat();
         Mat hisimg = new Mat();
 
-        CvInvoke.Resize(InputImg, output, new System.Drawing.Size(InputImg.Cols / 5, InputImg.Rows / 5));
+        //CvInvoke.Resize(InputImg, output, new System.Drawing.Size(InputImg.Cols / 5, InputImg.Rows / 5));
         CvInvoke.Canny(output, hisimg, 50, 250);
 
         for (int index_C = 0; index_C < hisimg.Cols; index_C++)
