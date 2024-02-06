@@ -49,7 +49,7 @@ public class ConnectAPI : MonoBehaviour
     {
         foreach(KeyValuePair<string,MapPos> item in mp)
         {
-            if(item.Key == pos)
+            if(item.Value.PosName == pos)
             {
                 Longitude = item.Value.Longi;
                 Latitude = item.Value.Lati;
@@ -83,8 +83,7 @@ public class ConnectAPI : MonoBehaviour
                 str += "&lang=ja";
                 break;
         }
-        //Debug.Log(str.ToString());
-
+        Debug.Log(str.ToString());
         UnityWebRequest request = UnityWebRequestTexture.GetTexture(str);
 
         request.SetRequestHeader("X-NCP-APIGW-API-KEY-ID", strAPIKey);
@@ -97,6 +96,7 @@ public class ConnectAPI : MonoBehaviour
             Debug.Log(request.error);
         } else
         {
+            print("Success!!!!!!");
             mapImage.texture = DownloadHandlerTexture.GetContent(request);
         }
     }

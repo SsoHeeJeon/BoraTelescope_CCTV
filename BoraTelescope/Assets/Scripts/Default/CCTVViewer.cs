@@ -113,7 +113,7 @@ public class CCTVViewer : MonoBehaviour
             matData = null;
             matData = new byte[9];
             stream.Read(matData, 0, matData.Length);    // 영상 사이즈 정보를 가져옴.
-                                                                //Debug.Log(recevBuffer.Length);
+                                                        //Debug.Log(recevBuffer.Length);
 
             camWidth = 1920;
             camHeight = 1080;
@@ -165,13 +165,24 @@ public class CCTVViewer : MonoBehaviour
     }
 
     byte[] BGRData;
-    
+
     public void ChangeRGB(byte[] origindata)
     {
-        //BGRData.AddRange(origindata);
         //for (int index = 0; index < origindata.Length; index++)
         //{
-        //    BGRData.Swap(index, index+2);
+        //    int a = index % 3;
+        //    switch (a)
+        //    {
+        //        case 0:
+        //            BGRData[index + 2] = origindata[index];
+        //            break;
+        //        case 1:
+        //            BGRData[index] = origindata[index];
+        //            break;
+        //        case 2:
+        //            BGRData[index - 2] = origindata[index];
+        //            break;
+        //    }
         //}
 
         for (int index = 0; index < origindata.Length; index += 3)
@@ -189,7 +200,7 @@ public class CCTVViewer : MonoBehaviour
     {
         while (true)
         {
-            if (i_videoWidth == 0 && i_videoHeight ==0)
+            if (i_videoWidth == 0 && i_videoHeight == 0)
             {
                 //uint i_videoHeight = 0;
                 //uint i_videoWidth = 0;
@@ -212,7 +223,7 @@ public class CCTVViewer : MonoBehaviour
                     //this.gameObject.GetComponent<AutoStreaming>().rawim.GetComponent<RawImage>().texture = tex;
                 }
             }
-            else 
+            else
             {
                 var texptr = mediaPlayer.GetTexture(i_videoWidth, i_videoHeight, out bool updated);
                 if (updated)

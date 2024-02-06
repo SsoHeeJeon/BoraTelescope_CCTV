@@ -4,6 +4,7 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class Label : Category
 {
@@ -348,6 +349,7 @@ public class Label : Category
                                         Narration.clip = Narration_J[index];
                                         break;
                                 }
+                                gamemanager.labeldetail.Detail_ScrollView.GetComponent<ScrollRect>().content.GetComponent<RectTransform>().sizeDelta = new Vector2(0, gamemanager.labeldetail.SubTitleDetail.GetComponent<RectTransform>().sizeDelta.y); 
                             }
                         }
                     }

@@ -28,6 +28,7 @@ public class TourismLite : MonoBehaviour
     void Start()
     {
         gamemanager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        gamemanager.tourLite = this;
         UISetting();
 
         AllRoute.SetActive(true);
@@ -45,22 +46,40 @@ public class TourismLite : MonoBehaviour
             {
                 if (RouteState_amount > RouteState.fillAmount)
                 {
-                    RouteState.fillAmount += 0.05f;
+                    RouteState.fillAmount += 0.0015f;
                 }
                 else if (RouteState_amount < RouteState.fillAmount)
                 {
-                    RouteState.fillAmount -= 0.05f;
+                    RouteState.fillAmount -= 0.0015f;
                 }
             }
 
-            if ((CarEffect.transform.position.x - CurPosCar_X) > 0.1f)
+            if(Mathf.Abs(CarEffect.transform.localPosition.x-((RouteState.fillAmount * 1120) - 495))>10)
             {
-                CarEffect.transform.position = new Vector2(Mathf.Lerp(CarEffect.transform.position.x, CurPosCar_X, AnimationTime), CarEffect.transform.position.y);
+                CarEffect.transform.localPosition = new Vector3((RouteState.fillAmount*1120)-495, 54, 0);
             }
-            else if ((CarEffect.transform.position.x - CurPosCar_X) <= 0.1f)
+            else
             {
-                CarEffect.transform.position = new Vector2(CurPosCar_X, CarEffect.transform.position.y);
+                if (Mathf.Abs(RouteState_amount- RouteState.fillAmount)<0.05f)
+                {
+                    if(Mathf.Abs(RouteState_amount - RouteState.fillAmount) * 20 >= 0.2f)
+                    {
+                        CarEffect.GetComponent<Image>().fillAmount = Mathf.Abs(RouteState_amount - RouteState.fillAmount) * 20;
+                    }
+                    else
+                    {
+                        CarEffect.GetComponent<Image>().fillAmount = 0;
+                    }
+                }
             }
+            //if ((CarEffect.transform.position.x - CurPosCar_X) > 0.1f)
+            //{
+            //    CarEffect.transform.position = new Vector2(Mathf.Lerp(CarEffect.transform.position.x, CurPosCar_X, AnimationTime), CarEffect.transform.position.y);
+            //}
+            //else if ((CarEffect.transform.position.x - CurPosCar_X) <= 0.1f)
+            //{
+            //    CarEffect.transform.position = new Vector2(CurPosCar_X, CarEffect.transform.position.y);
+            //}
         }
     }
 
@@ -218,7 +237,6 @@ public class TourismLite : MonoBehaviour
     {
         AllRoute.SetActive(false);
         AnnounceRoute.SetActive(true);
-        
         switch (btn.name)
         {
             case "Route1":
@@ -332,6 +350,7 @@ public class TourismLite : MonoBehaviour
 
     public void NPostion(string NP)
     {
+        CarEffect.GetComponent<Image>().fillAmount = 1;
         for (int index = 0; index < PosName.Length; index++)
         {
             PosName[index].transform.GetChild(0).gameObject.GetComponent<Text>().color = new Color(0.6196079f, 0.6196079f, 0.6196079f);
@@ -357,6 +376,8 @@ public class TourismLite : MonoBehaviour
                 {
                     PosAddress.text = GoldSunset_Tour.Posadd_E[PosName.Length * num];
                 }
+
+                CarEffect.transform.rotation = Quaternion.Euler(0, 180, 0);
                 break;
             case "second":
                 PosName[1].transform.GetChild(0).gameObject.GetComponent<Text>().color = new Color(0.2588235f, 0.2588235f, 0.2588235f);
@@ -366,7 +387,7 @@ public class TourismLite : MonoBehaviour
                 CurrentPos.transform.position = new Vector3(743, 957, 0);
                 CurPosCar_X = 763;
 
-                clicknaviobj = gamemanager.label.Title_K[PosName.Length * num + 1];
+                clicknaviobj = gamemanager.label.Title_K[GoldSunsetLabel.Label_total.Count+PosName.Length * num + 1];
 
                 if (GameManager.currentLang == GameManager.Language_enum.Korea)
                 {
@@ -376,7 +397,16 @@ public class TourismLite : MonoBehaviour
                 {
                     PosAddress.text = GoldSunset_Tour.Posadd_E[PosName.Length * num + 1];
                 }
-                break;
+
+                if (CarEffect.GetComponent<RectTransform>().anchoredPosition.x < -230)
+                {
+                    CarEffect.transform.rotation = Quaternion.Euler(0, 0, 0);
+                }
+                else
+                {
+                    CarEffect.transform.rotation = Quaternion.Euler(0, 180, 0);
+                }
+                    break;
             case "third":
                 PosName[2].transform.GetChild(0).gameObject.GetComponent<Text>().color = new Color(0.2588235f, 0.2588235f, 0.2588235f);
                 PosName[2].transform.GetChild(1).gameObject.GetComponent<Text>().color = new Color(0.2588235f, 0.2588235f, 0.2588235f);
@@ -385,7 +415,7 @@ public class TourismLite : MonoBehaviour
                 CurrentPos.transform.position = new Vector3(940, 957, 0);
                 CurPosCar_X = 959;
 
-                clicknaviobj = gamemanager.label.Title_K[PosName.Length * num + 2];
+                clicknaviobj = gamemanager.label.Title_K[GoldSunsetLabel.Label_total.Count + PosName.Length * num + 2];
 
                 if (GameManager.currentLang == GameManager.Language_enum.Korea)
                 {
@@ -394,6 +424,15 @@ public class TourismLite : MonoBehaviour
                 else if (GameManager.currentLang == GameManager.Language_enum.English)
                 {
                     PosAddress.text = GoldSunset_Tour.Posadd_E[PosName.Length * num + 2];
+                }
+
+                if (CarEffect.GetComponent<RectTransform>().anchoredPosition.x < -52)
+                {
+                    CarEffect.transform.rotation = Quaternion.Euler(0, 0, 0);
+                }
+                else
+                {
+                    CarEffect.transform.rotation = Quaternion.Euler(0, 180, 0);
                 }
                 break;
             case "fourth":
@@ -414,6 +453,16 @@ public class TourismLite : MonoBehaviour
                 {
                     PosAddress.text = GoldSunset_Tour.Posadd_E[PosName.Length * num + 3];
                 }
+
+
+                if (CarEffect.GetComponent<RectTransform>().anchoredPosition.x < 150)
+                {
+                    CarEffect.transform.rotation = Quaternion.Euler(0, 0, 0);
+                }
+                else
+                {
+                    CarEffect.transform.rotation = Quaternion.Euler(0, 180, 0);
+                }
                 break;
             case "fifth":
                 PosName[4].transform.GetChild(0).gameObject.GetComponent<Text>().color = new Color(0.2588235f, 0.2588235f, 0.2588235f);
@@ -432,6 +481,15 @@ public class TourismLite : MonoBehaviour
                 else if (GameManager.currentLang == GameManager.Language_enum.English)
                 {
                     PosAddress.text = GoldSunset_Tour.Posadd_E[PosName.Length * num + 4];
+                }
+
+                if (CarEffect.GetComponent<RectTransform>().anchoredPosition.x < 360)
+                {
+                    CarEffect.transform.rotation = Quaternion.Euler(0, 0, 0);
+                }
+                else
+                {
+                    CarEffect.transform.rotation = Quaternion.Euler(0, 180, 0);
                 }
                 break;
             case "sixth":
@@ -452,6 +510,8 @@ public class TourismLite : MonoBehaviour
                 {
                     PosAddress.text = GoldSunset_Tour.Posadd_E[PosName.Length * num + 5];
                 }
+
+                CarEffect.transform.rotation = Quaternion.Euler(0, 0, 0);
                 break;
         }
         seemap.SelectPos(clicknaviobj);
@@ -553,10 +613,23 @@ public class TourismLite : MonoBehaviour
                         gamemanager.label.Narration.clip = gamemanager.label.Narration_J[index];
                         break;
                 }
+                gamemanager.label.Narration.Play();
             }
         }
 
         Canvas.ForceUpdateCanvases();
         gamemanager.labeldetail.ClickLabel();
+    }
+
+    public void DPSoundClick()
+    {
+        if (gamemanager.label.Narration.isPlaying)
+        {
+            gamemanager.label.Narration.Stop();
+        }
+        else
+        {
+            gamemanager.label.Narration.Play();
+        }
     }
 }
