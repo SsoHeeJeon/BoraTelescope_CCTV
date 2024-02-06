@@ -174,33 +174,11 @@ public class CCTVViewer : MonoBehaviour
         //    BGRData.Swap(index, index+2);
         //}
 
-        for (int index = 0; index < origindata.Length; index++)
+        for (int index = 0; index < origindata.Length; index += 3)
         {
-            int a = index % 3;
-            switch (a)
-            {
-                case 0:
-                    BGRData[index + 2] = origindata[index];
-                    break;
-                case 1:
-                    BGRData[index] = origindata[index];
-                    break;
-                case 2:
-                    BGRData[index - 2] = origindata[index];
-                    break;
-            }
-            //if (a == 0)
-            //{
-            //    BGRData[index+2] = origindata[index];
-            //}
-            //else if (a == 2)
-            //{
-            //    BGRData[index-2] = origindata[index];
-            //}
-            //else
-            //{
-            //    BGRData[index] = origindata[index];
-            //}
+            BGRData[index + 2] = origindata[index];
+            BGRData[index + 1] = origindata[index + 1];
+            BGRData[index] = origindata[index + 2];
         }
     }
 

@@ -7,7 +7,7 @@ public class BroadcastCam : MonoBehaviour
 {
     public GameManager gamemanager;
     public GameObject RecordingCam;
-    //public GameObject VideoRecord;
+    public SunAPITest.CCTVControl cctvcontrol;
     //public AllTimeRecord alltimerecord;
     public static bool firstdontdestroy = false;
 
@@ -22,6 +22,7 @@ public class BroadcastCam : MonoBehaviour
             if (SceneManager.GetActiveScene().name.Contains("XRMode"))
             {
                 RecordingCam = gamemanager.xrmode.CameraWindow;
+                cctvcontrol = gamemanager.xrmode.cctvcontrol;
             }
             else
             {
@@ -38,6 +39,7 @@ public class BroadcastCam : MonoBehaviour
                 if (SceneManager.GetActiveScene().name.Contains("XRMode"))
                 {
                     RecordingCam = gamemanager.xrmode.CameraWindow;
+                    cctvcontrol = gamemanager.xrmode.cctvcontrol;
                 }
                 else
                 {
@@ -54,6 +56,7 @@ public class BroadcastCam : MonoBehaviour
                     gamemanager.xrmode.CameraWindow.transform.position = recordcamPos_XR;
                     GameObject.Find("Canvas_Label").GetComponent<Canvas>().worldCamera = RecordingCam.transform.GetChild(1).gameObject.GetComponent<Camera>();  // Label Canvas EventCamera setting
                     gamemanager.xrmode.UICam = RecordingCam.transform.GetChild(1).gameObject.GetComponent<Camera>();
+                    gamemanager.xrmode.cctvcontrol = cctvcontrol;
                 }
                 else
                 {
