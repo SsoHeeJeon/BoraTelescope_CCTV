@@ -76,7 +76,11 @@ public class LabelDetail : VideoDetail
             if (ContentsInfo.ContentsName == "GoldSunset")
             {
                 Detail_Background.transform.localPosition = new Vector3(Detail_Close_x, Detail_y, 0);
+                scrollview_y = 221;
             }
+        } else if (SceneManager.GetActiveScene().name.Contains("Tourism"))
+        {
+            scrollview_y = 315;
         }
     }
 
@@ -160,14 +164,17 @@ public class LabelDetail : VideoDetail
 
         if (moredetail == false)
         {
-            //if (InfoImageHeight <= 197)
-            //{
-            //    DetailMore_but.gameObject.SetActive(false);
-            //}
-            //else
-            //{
-            //    DetailMore_but.gameObject.SetActive(true);
-            //}
+            if (!SceneManager.GetActiveScene().name.Contains("Tourism"))
+            {
+                if (InfoImageHeight <= 217)
+                {
+                    DetailMore_but.gameObject.SetActive(false);
+                }
+                else
+                {
+                    DetailMore_but.gameObject.SetActive(true);
+                }
+            }
         } else if (moredetail == true)
         {
             InfoImageHeight = InfoHeight.GetComponent<RectTransform>().rect.height;
@@ -182,10 +189,10 @@ public class LabelDetail : VideoDetail
                 {
                     SeeMore();
                 }
-            } else if(InfoImageHeight <= 197)
+            } else if(InfoImageHeight <= 217)
             {
                 moredetail = false;
-            } else if(InfoImageHeight > 197 && InfoImageHeight <= 366)
+            } else if(InfoImageHeight > 217 && InfoImageHeight <= 366)
             {
                 if (!DetailMore_but.activeSelf)
                 {
@@ -441,7 +448,7 @@ public class LabelDetail : VideoDetail
             {
                 detailbackground_rect.sizeDelta = new Vector2(detailbackground_rect.rect.width, Change_y);
                 //Detail_Viewport.GetComponent<RectTransform>().offsetMin = new Vector2(Detail_Viewport.GetComponent<RectTransform>().rect.xMin, 0.0f);
-                Detail_ScrollView.GetComponent<RectTransform>().sizeDelta = new Vector2(Detail_ScrollView.GetComponent<RectTransform>().rect.width, 356.0f);
+                Detail_ScrollView.GetComponent<RectTransform>().sizeDelta = new Vector2(Detail_ScrollView.GetComponent<RectTransform>().rect.width, 380.0f);
 
                 if (moredetail_scroll == true)
                 {
@@ -454,7 +461,7 @@ public class LabelDetail : VideoDetail
         else if (detailbackground_rect.rect.height == Change_y)
         {
             //Detail_Viewport.GetComponent<RectTransform>().offsetMin = new Vector2(Detail_Viewport.GetComponent<RectTransform>().rect.xMin, 0.0f);
-            Detail_ScrollView.GetComponent<RectTransform>().sizeDelta = new Vector2(Detail_ScrollView.GetComponent<RectTransform>().rect.width, 356.0f);
+            Detail_ScrollView.GetComponent<RectTransform>().sizeDelta = new Vector2(Detail_ScrollView.GetComponent<RectTransform>().rect.width, 380.0f);
 
             if (moredetail_scroll == true)
             {
@@ -490,7 +497,7 @@ public class LabelDetail : VideoDetail
             {
                 if (Detail_ScrollView.GetComponent<RectTransform>().sizeDelta.y > 202.0f)
                 {
-                    Detail_ScrollView.GetComponent<RectTransform>().sizeDelta = new Vector2(Detail_ScrollView.GetComponent<RectTransform>().rect.width, Mathf.Lerp(356.0f, scrollview_y, timescale));
+                    Detail_ScrollView.GetComponent<RectTransform>().sizeDelta = new Vector2(Detail_ScrollView.GetComponent<RectTransform>().rect.width, Mathf.Lerp(380.0f, scrollview_y, timescale));
                 }
                 else if (Detail_ScrollView.GetComponent<RectTransform>().sizeDelta.y <= 202.0f)
                 {

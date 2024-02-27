@@ -39,7 +39,7 @@ public class WaitingMode : MonoBehaviour
             //BackGround_Video.gameObject.GetComponent<RawImage>().enabled = false;
             title.text = "망원경으로 관람하기";
         }
-        else if(ContentsInfo.ContentsName == "GoldSunset")     //y = 90
+        else if(ContentsInfo.ContentsName == "Gold")     //y = 90
         {
             title.text = "임시운영 중입니다.\r\n망원경 관람 가능합니다.";
         }

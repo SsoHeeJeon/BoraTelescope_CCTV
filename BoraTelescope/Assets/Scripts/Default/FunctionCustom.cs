@@ -67,6 +67,20 @@ public class FunctionCustom : MonoBehaviour
                 SelfiFunction.selfimode = false;
                 Season_On();
                 break;
+            case "Woosuk":
+                TelescopeOtherList();
+                CaptureOff();
+                VisitBookOn();
+                //AddModeOn(0, "TourismMode");
+                ModeBut_Off("Etc");
+                ModeBut_Off("AutoGuide");
+                ModeBut_Off("PastMode");
+                ModeBut_Off("FIlter");
+                OnceLiveXR_Off();
+                View360 = false;
+                SelfiFunction.selfimode = false;
+                Season_Off();
+                break;
         }
     }
 

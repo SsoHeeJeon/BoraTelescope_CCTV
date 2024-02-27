@@ -1,0 +1,393 @@
+fileFormatVersion: 2
+guid: 71b94a68efebb5b4a9e549582ff73475
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3927660608520130595
+    second: NavigationLabel_0
+  - first:
+      213: 8885476736063808410
+    second: NavigationLabel_1
+  - first:
+      213: -513432529943635620
+    second: NavigationLabel_2
+  - first:
+      213: 6428442061037043226
+    second: NavigationLabel_3
+  - first:
+      213: 7639947720977232951
+    second: NavigationLabel_4
+  - first:
+      213: -7867262764122509241
+    second: NavigationLabel_5
+  - first:
+      213: -1174499133438584552
+    second: NavigationLabel_2
+  - first:
+      213: 7332586484725379906
+    second: NavigationLabel_7
+  - first:
+      213: -2523738125860128310
+    second: NavigationLabel_8
+  - first:
+      213: -1950370681888416229
+    second: NavigationLabel_9
+  - first:
+      213: -4089044165396096971
+    second: NavigationLabel_10
+  - first:
+      213: -7346805973843734784
+    second: NavigationLabel_11
+  - first:
+      213: -5060052388159003123
+    second: NavigationLabel_12
+  - first:
+      213: -5515103572266601821
+    second: NavigationLabel_13
+  - first:
+      213: 6350575529240047645
+    second: NavigationLabel_14
+  - first:
+      213: -3843491643246648736
+    second: NavigationLabel_15
+  - first:
+      213: -1046739618404873652
+    second: NavigationLabel_16
+  - first:
+      213: -2881301743336193394
+    second: NavigationLabel_17
+  - first:
+      213: -8896983774724805655
+    second: NavigationLabel_18
+  - first:
+      213: -1470686446455111387
+    second: NavigationLabel_19
+  - first:
+      213: -8349376266441858676
+    second: NavigationLabel_20
+  - first:
+      213: -3617490760677535769
+    second: NavigationLabel_21
+  - first:
+      213: 1805670305735206486
+    second: NavigationLabel_22
+  - first:
+      213: 8239775213570725304
+    second: NavigationLabel_23
+  - first:
+      213: -923158628133034563
+    second: NavigationLabel_24
+  - first:
+      213: -7900783298461988836
+    second: NavigationLabel_25
+  - first:
+      213: -8571491190957900461
+    second: NavigationLabel_26
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NavigationLabel_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1968
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddfecd67c752e79c0800000000000000
+      internalID: -3927660608520130595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NavigationLabel_1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1888
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a93a411a30e8f4b70800000000000000
+      internalID: 8885476736063808410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NavigationLabel_3
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1728
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1efa43cef9663950800000000000000
+      internalID: 6428442061037043226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NavigationLabel_4
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1648
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 734376b59fb860a60800000000000000
+      internalID: 7639947720977232951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NavigationLabel_5
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1568
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 740f1d5d23ed1d290800000000000000
+      internalID: -7867262764122509241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NavigationLabel_6
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1488
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 819936ac24753bfe0800000000000000
+      internalID: -1174499133438584552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NavigationLabel_2
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1808
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59549495dbefd8f0800000000000000
+      internalID: -513432529943635620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NavigationLabel_7
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1408
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243f2e2ee8492c560800000000000000
+      internalID: 7332586484725379906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

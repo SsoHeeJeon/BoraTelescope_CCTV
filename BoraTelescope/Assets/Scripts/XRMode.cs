@@ -64,8 +64,8 @@ public class XRMode : MonoBehaviour
     {
         gamemanager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         gamemanager.UISetting();
-
-        if(ContentsInfo.ContentsName == "Apsan")
+        cctvcontrol.monitor.ReadytoStart();
+        if (ContentsInfo.ContentsName == "Apsan")
         {
             AllMapLabels.transform.parent.gameObject.GetComponent<BehindLabel>().ReadytoStart();
             BehindLabel.ReadLabelPosition();
@@ -74,6 +74,12 @@ public class XRMode : MonoBehaviour
             AllMapLabels.transform.parent.gameObject.GetComponent<DisableLabel>().ReadytoStart();
             DisableLabel.ReadLabelPosition();
             //AllMapLabels.transform.parent.gameObject.GetComponent<DisableLabel>().MapLabel();
+        } else if(ContentsInfo.ContentsName == "Woosuk")
+        {
+            gamemanager.Homebtn.transform.parent.gameObject.GetComponent<Image>().sprite = gamemanager.HomeBase_1;
+            gamemanager.Homebtn.transform.parent.gameObject.GetComponent<Image>().SetNativeSize();
+            XRToggle.SetActive(true);
+            gamemanager.Tip_Obj.SetActive(false);
         }
 
         gamemanager.pinchzoominout.ZoomState.gameObject.SetActive(true);
@@ -142,9 +148,22 @@ public class XRMode : MonoBehaviour
         gamemanager.TipClose();
     }
 
+    float changex;
     // Update is called once per frame
     void Update()
     {
+        if (cctvcontrol.monitor.SwitchingImage != null)
+        {
+            if (cctvcontrol.monitor.SwitchingImage.activeSelf)
+            {
+                gamemanager.UI_All.SetActive(false);
+            }
+            else if (!cctvcontrol.monitor.SwitchingImage.activeSelf)
+            {
+                gamemanager.UI_All.SetActive(true);
+            }
+        }
+
         playtime += Time.deltaTime;
         zoommove_t += Time.deltaTime * 3;
 
@@ -197,12 +216,15 @@ public class XRMode : MonoBehaviour
             AllMapLabels.SetActive(false);
             AllMapLabels.transform.parent.GetChild(1).gameObject.SetActive(false);
         }*/
-
-        if (AllMapLabels.transform.GetChild(0).transform.GetChild(2).gameObject.transform.localScale.x != cctvcontrol.zoomFactor*7)
+        if (AllMapLabels.activeSelf)
         {
-            for (int index = 0; index < AllMapLabels.transform.childCount; index++)
+            changex = (cctvcontrol.zoomFactor - 1) / 39 * 270 + 90;
+            if (AllMapLabels.transform.GetChild(0).transform.GetChild(2).gameObject.transform.localScale.x != changex)
             {
-                AllMapLabels.transform.GetChild(index).transform.GetChild(2).gameObject.transform.localScale = Vector3.Lerp(AllMapLabels.transform.GetChild(index).transform.GetChild(2).gameObject.transform.localScale, new Vector3(cctvcontrol.zoomFactor*7, cctvcontrol.zoomFactor * 7, cctvcontrol.zoomFactor * 7), Time.deltaTime);
+                for (int index = 0; index < AllMapLabels.transform.childCount; index++)
+                {
+                    AllMapLabels.transform.GetChild(index).transform.GetChild(2).gameObject.transform.localScale = Vector3.Lerp(AllMapLabels.transform.GetChild(index).transform.GetChild(2).gameObject.transform.localScale, new Vector3(changex, changex, changex), Time.deltaTime);
+                }
             }
         }
         touchcount_int = Input.touchCount;
@@ -466,7 +488,7 @@ public class XRMode : MonoBehaviour
 
         if (SelectLabel == null)
         {
-            //gamemanager.label.SelectLabel(Label.name);
+            gamemanager.label.SelectLabel(Label.name);
             /*
             gamemanager.navi_t = 0;
             gamemanager.moveNavi = true;
@@ -551,7 +573,13 @@ public class XRMode : MonoBehaviour
         }
         else
         {
-            xpulse = xpulse;
+            if (xpulse >= 0)
+            {
+                xpulse = xpulse;
+            } else if(xpulse < 0)
+            {
+                xpulse = 360 + xpulse;
+            }
         }
 
         if (ypulse >= maxtilt)
@@ -567,17 +595,17 @@ public class XRMode : MonoBehaviour
             ypulse = ypulse;
         }
 
-        if (Mathf.Abs(currentMotor_x - xpulse) <= 2000)
-        {
-            PanFreq = panFreq_Near;
-            //PanTiltControl.SetFreq(PanTiltControl.Motor.Pan, PanTiltControl.Speed.Slow);
-            gamemanager.speed_enum = GameManager.Speed_enum.slow;
-        }
-        else if (Mathf.Abs(currentMotor_x - xpulse) > 2000)
-        {
-            //PanTiltControl.SetFreq(PanTiltControl.Motor.Pan, PanTiltControl.Speed.Fast);
-            gamemanager.speed_enum = GameManager.Speed_enum.fast;
-        }
+        //if (Mathf.Abs(currentMotor_x - xpulse) <= 2000)
+        //{
+        //    PanFreq = panFreq_Near;
+        //    //PanTiltControl.SetFreq(PanTiltControl.Motor.Pan, PanTiltControl.Speed.Slow);
+        //    gamemanager.speed_enum = GameManager.Speed_enum.slow;
+        //}
+        //else if (Mathf.Abs(currentMotor_x - xpulse) > 2000)
+        //{
+        //    //PanTiltControl.SetFreq(PanTiltControl.Motor.Pan, PanTiltControl.Speed.Fast);
+        //    gamemanager.speed_enum = GameManager.Speed_enum.fast;
+        //}
         Invoke("RealMovePantilt", 0.1f);
     }
 
@@ -870,5 +898,10 @@ public class XRMode : MonoBehaviour
                 }
                 break;
         }
+    }
+
+    public void SwitchingCCTV()
+    {
+        cctvcontrol.monitor.SwitchingCCTV();
     }
 }

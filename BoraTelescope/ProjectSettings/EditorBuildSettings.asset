@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Busan/TourismMode_GoldSunset.unity
     guid: 3e4ca709b3b72ae449fa0c4fcdd3a0da
+  - enabled: 0
+    path: Assets/Scenes/Junla/XRMode_Woosuk.unity
+    guid: 19a3918da3a9add499c3821a11a7d5ad
+  - enabled: 0
+    path: Assets/Scenes/Junla/ClearMode_Woosuk.unity
+    guid: a34d76858bf97664b8c9c97d5ac7ccf1
   m_configObjects: {}

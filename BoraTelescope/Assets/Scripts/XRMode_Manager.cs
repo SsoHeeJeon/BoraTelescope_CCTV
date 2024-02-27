@@ -6,7 +6,7 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class XRMode_Manager : MonoBehaviour
+public class XRMode_Manager : CheckCCTVSet
 {
     public GameManager gamemanager;
     public GameObject ManagerMode;
@@ -36,14 +36,14 @@ public class XRMode_Manager : MonoBehaviour
     float Current_x;
     float Current_y;
 
-    public static float MinPan;
-    public static float MaxPan;
-    public static float MinTilt;
-    public static float MaxTilt;
-    public static float StartPosition_x;
-    public static float StartPosition_y;
-    public static float TotalPan;
-    public static float TotalTilt;
+    //public static float MinPan;
+    //public static float MaxPan;
+    //public static float MinTilt;
+    //public static float MaxTilt;
+    //public static float StartPosition_x;
+    //public static float StartPosition_y;
+    //public static float TotalPan;
+    //public static float TotalTilt;
 
     public bool AllchangeLabel = false;
     public bool setlabelcamera = false;
@@ -159,7 +159,7 @@ public class XRMode_Manager : MonoBehaviour
         XRModeLabelPosition labelposition = new XRModeLabelPosition(labelname, label_x, label_y, labelsize);
         //StartPosition = gamemanager.StartLabel;
 
-        PanTiltRange pantilt = new PanTiltRange(MinPan, MaxPan, MinTilt, MaxTilt, GameManager.startlabel_x, GameManager.startlabel_y, TotalPan, TotalTilt, (int)GameManager.waitingTime,SunAPITest.CCTVControl.url);
+        PanTiltRange pantilt = new PanTiltRange(MinPan, MaxPan, MinTilt, MaxTilt, GameManager.startlabel_x, GameManager.startlabel_y, TotalPan, TotalTilt, (int)GameManager.waitingTime,SunAPITest.CCTVControl.firsturl);
 
         string str = JsonUtility.ToJson(labelposition);
         string str_1 = JsonUtility.ToJson(pantilt);
@@ -470,9 +470,9 @@ public class XRMode_Manager : MonoBehaviour
                 Debug.Log("MaxTilt" + MaxTilt);
                 break;
             case "StartPosition":
-                StartPosition_x = Current_x;
+                GameManager.startlabel_x = (uint)Current_x;
                 btn.transform.GetChild(0).gameObject.GetComponent<Text>().text = Current_x.ToString();
-                StartPosition_y = Current_y;
+                GameManager.startlabel_y = (uint)Current_y;
                 btn.transform.GetChild(0).gameObject.GetComponent<Text>().text = Current_y.ToString();
                 break;
         }
@@ -524,7 +524,7 @@ public class XRMode_Manager : MonoBehaviour
             case "MinPan":
                 //SetValueX_min = float.Parse(PanTiltControl.NowPanPulse.ToString());
                 //btn.transform.GetChild(0).GetComponent<Text>().text = PanTiltControl.NowPanPulse.ToString();
-
+                SetValueX_min = float.Parse(gamemanager.xrmode.currentMotor_x.ToString());
                 if (btn.transform.parent.gameObject.transform.GetChild(5).gameObject.transform.GetChild(0).gameObject.GetComponent<Text>().text != "MaxPan")
                 {
                     Totalpan_Text.GetComponent<Text>().text = Math.Round((1920 / Mathf.Abs(SetValueX_max - SetValueX_min)), 3).ToString();
@@ -533,6 +533,7 @@ public class XRMode_Manager : MonoBehaviour
             case "MaxPan":
                 //SetValueX_max = float.Parse(PanTiltControl.NowPanPulse.ToString());
                 //btn.transform.GetChild(0).GetComponent<Text>().text = PanTiltControl.NowPanPulse.ToString();
+                SetValueX_max = float.Parse(gamemanager.xrmode.currentMotor_x.ToString());
 
                 if (btn.transform.parent.gameObject.transform.GetChild(4).gameObject.transform.GetChild(0).gameObject.GetComponent<Text>().text != "MinPan")
                 {
@@ -540,6 +541,7 @@ public class XRMode_Manager : MonoBehaviour
                 }
                 break;
             case "MinTilt":
+                SetValueY_min = float.Parse(gamemanager.xrmode.currentMotor_y.ToString());
                 //SetValueY_min = float.Parse(PanTiltControl.NowTiltPulse.ToString());
                 //btn.transform.GetChild(0).GetComponent<Text>().text = PanTiltControl.NowTiltPulse.ToString();
 
@@ -549,6 +551,7 @@ public class XRMode_Manager : MonoBehaviour
                 }
                 break;
             case "MaxTilt":
+                SetValueY_max = float.Parse(gamemanager.xrmode.currentMotor_y.ToString());
                 //SetValueY_max = float.Parse(PanTiltControl.NowTiltPulse.ToString());
                 //btn.transform.GetChild(0).GetComponent<Text>().text = PanTiltControl.NowTiltPulse.ToString();
 

@@ -82,7 +82,7 @@ public class GoldSunsetLabel : MonoBehaviour
 
         SettingManager.Password_Setting = "1215";
 
-        GameManager.MainMode = "LiveMode";
+        GameManager.MainMode = "XRMode";
         ClearMode.StartPosition = new Vector3(-1705, -2744, -1631);
         ClearMode.StartZoom = 200;
         ClearMode.MaxZoomIn = 1851;
@@ -90,6 +90,7 @@ public class GoldSunsetLabel : MonoBehaviour
         ClearMode.MaxZoomOut = -100;
         ClearMode.MinLabelSize = 1.0f;
         ClearMode.MaxLabelSize = 3;//5.5f;
+        SunAPITest.CCTVControl.SwitchiingCCTV = false;
 
         ModeActive = new bool[3];
     }

@@ -84,7 +84,7 @@ public class ReceiveServer : MonoBehaviour
                             break;
                     }
                     break;
-                case "Aegibong":
+                case "Woosuk":
                     switch (modeonoffinfo[index])
                     {
                         case "LiveTrue":

@@ -54,7 +54,7 @@ public class BoraJoyStick : MonoBehaviour
             Horizontal = true;
             if (variableJoystick.Horizontal >= 0.2f)
             {
-                //if (GM.xrmode.currentMotor_x <= XRMode_Manager.MaxPan)
+                if (GM.xrmode.currentMotor_x <= XRMode_Manager.MaxPan)
                 {
                     SunAPITest.CCTVControl.UseUrl = "http://" + SunAPITest.CCTVControl.url + "/stw-cgi/ptzcontrol.cgi?msubmenu=move&action=control&Direction=Right";
                     GM.xrmode.cctvcontrol.httpRequest.Request("GET", SunAPITest.CCTVControl.UseUrl, SunAPITest.CCTVControl.uid, SunAPITest.CCTVControl.pwd);
@@ -62,11 +62,14 @@ public class BoraJoyStick : MonoBehaviour
                     //GM.MoveDir = "Right";
                     //Debug.Log("joystick + " + GM.MoveDir);
                     //GM.cctvcontrol.MoveCamera_Arrow();
+                } else
+                {
+                    pantiltstop();
                 }
             }
             else if (variableJoystick.Horizontal <= -0.2f)
             {
-                //if (GM.xrmode.currentMotor_x >= XRMode_Manager.MinPan)
+                if (GM.xrmode.currentMotor_x >= XRMode_Manager.MinPan)
                 {
                     SunAPITest.CCTVControl.UseUrl = "http://" + SunAPITest.CCTVControl.url + "/stw-cgi/ptzcontrol.cgi?msubmenu=move&action=control&Direction=Left";
                     GM.xrmode.cctvcontrol.httpRequest.Request("GET", SunAPITest.CCTVControl.UseUrl, SunAPITest.CCTVControl.uid, SunAPITest.CCTVControl.pwd);
@@ -74,6 +77,10 @@ public class BoraJoyStick : MonoBehaviour
                     //GM.MoveDir = "Left";
                     //Debug.Log("joystick + " + GM.MoveDir);
                     //GM.cctvcontrol.MoveCamera_Arrow();
+                }
+                else
+                {
+                    pantiltstop();
                 }
             }
             else
@@ -84,7 +91,7 @@ public class BoraJoyStick : MonoBehaviour
 
             if (variableJoystick.Vertical >= 0.2f)
             {
-                //if (GM.xrmode.currentMotor_y < XRMode_Manager.MaxTilt)
+                if (GM.xrmode.currentMotor_y < XRMode_Manager.MaxTilt)
                 {
                     SunAPITest.CCTVControl.UseUrl = "http://" + SunAPITest.CCTVControl.url + "/stw-cgi/ptzcontrol.cgi?msubmenu=move&action=control&Direction=Up";
                     GM.xrmode.cctvcontrol.httpRequest.Request("GET", SunAPITest.CCTVControl.UseUrl, SunAPITest.CCTVControl.uid, SunAPITest.CCTVControl.pwd);
@@ -92,11 +99,14 @@ public class BoraJoyStick : MonoBehaviour
                     //GM.MoveDir = "Up";
                     //Debug.Log("joystick + " + GM.MoveDir);
                     //GM.cctvcontrol.MoveCamera_Arrow();
+                } else
+                {
+                    pantiltstop();
                 }
             }
             else if (variableJoystick.Vertical <= -0.2f)
             {
-                //if (GM.xrmode.currentMotor_y > XRMode_Manager.MinTilt)
+                if (GM.xrmode.currentMotor_y > XRMode_Manager.MinTilt)
                 {
                     SunAPITest.CCTVControl.UseUrl = "http://" + SunAPITest.CCTVControl.url + "/stw-cgi/ptzcontrol.cgi?msubmenu=move&action=control&Direction=Down";
                     GM.xrmode.cctvcontrol.httpRequest.Request("GET", SunAPITest.CCTVControl.UseUrl, SunAPITest.CCTVControl.uid, SunAPITest.CCTVControl.pwd);
@@ -104,6 +114,10 @@ public class BoraJoyStick : MonoBehaviour
                     //GM.MoveDir = "Down";
                     //Debug.Log("joystick + " + GM.MoveDir);
                     //GM.cctvcontrol.MoveCamera_Arrow();
+                }
+                else
+                {
+                    pantiltstop();
                 }
             }
             else

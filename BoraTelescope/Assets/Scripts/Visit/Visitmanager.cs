@@ -54,6 +54,13 @@ public class Visitmanager : MonoBehaviour
     void Start()
     {
         gamemanager.WriteLog(LogSendServer.NormalLogCode.Visit_Start, "GuestModeStart", GetType().ToString());
+
+        if (ContentsInfo.ContentsName == "Woosuk")
+        {
+            gamemanager.Homebtn.transform.parent.gameObject.GetComponent<Image>().sprite = gamemanager.HomeBase;
+            gamemanager.Homebtn.transform.parent.gameObject.GetComponent<Image>().SetNativeSize();
+        }
+
         Right.enabled = false;
         Right.gameObject.SetActive(false);
         DateTime StartTime = Convert.ToDateTime("2023-06-01 00:00:00");
@@ -105,7 +112,7 @@ public class Visitmanager : MonoBehaviour
 
         gamemanager.WriteLog(GameManager.NormalLogCode.ChangeMode, "ChangeMode : Finish(" + GameManager.PrevMode + " - " + "VisitMode)", GetType().ToString());
         GameManager.PrevMode = "VisitMode";
-        BackGroundImg.sprite = Resources.Load<Sprite>("Visit/BackGround");
+        BackGroundImg.sprite = Resources.Load<Sprite>(ContentsInfo.ContentsName + "/Sprite/VisitBackground");
     }
 
     private void Update()

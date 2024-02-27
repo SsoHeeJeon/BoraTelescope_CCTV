@@ -12,6 +12,11 @@ public class ReadJson : MonoBehaviour
     public static string RangePT;
     public static string[] allstr_json;
 
+    string Allstr_1;
+    string PayAllstr_1;
+    public static string RangePT_1;
+    public static string[] allstr_json_1;
+
     string Allstr_rec;
     string GetText;
     public string[] GOTEXT_arr;
@@ -65,60 +70,151 @@ public class ReadJson : MonoBehaviour
             }
         }
 
-        if (File.Exists(Application.dataPath + ("/XRModeLabelPosition_" + ContentsInfo.ContentsName + ".json")))
+        if (SunAPITest.CCTVControl.SwitchiingCCTV == false)
         {
-            Allstr = File.ReadAllText(Application.dataPath + ("/XRModeLabelPosition_" + ContentsInfo.ContentsName + ".json"));
-            gamemanager.WriteLog(LogSendServer.NormalLogCode.Load_ARModeLabelPosition, "Load_XRModeLabelPosition", GetType().ToString());
-            gamemanager.label.Label_Position = new Vector3[gamemanager.label.Label_total.Count];
-            if (Allstr.Contains("}"))
+            if (File.Exists(Application.dataPath + ("/XRModeLabelPosition_" + ContentsInfo.ContentsName + ".json")))
             {
-                allstr_json = Allstr.Split('}');
-
-                for (int index = -1; index < allstr_json.Length - 1; index++)
+                Allstr = File.ReadAllText(Application.dataPath + ("/XRModeLabelPosition_" + ContentsInfo.ContentsName + ".json"));
+                gamemanager.WriteLog(LogSendServer.NormalLogCode.Load_ARModeLabelPosition, "Load_XRModeLabelPosition", GetType().ToString());
+                gamemanager.label.Label_Position = new Vector3[gamemanager.label.Label_total.Count];
+                if (Allstr.Contains("}"))
                 {
-                    if (index < allstr_json.Length - 2)
+                    allstr_json = Allstr.Split('}');
+
+                    for (int index = -1; index < allstr_json.Length - 1; index++)
                     {
-                        allstr_json[index + 1] = allstr_json[index + 1] + "}";
+                        if (index < allstr_json.Length - 2)
+                        {
+                            allstr_json[index + 1] = allstr_json[index + 1] + "}";
+                        }
+                        else if (index == allstr_json.Length - 2)
+                        {
+                            RangePT = allstr_json[index];
+                        }
                     }
-                    else if (index == allstr_json.Length - 2)
+                }
+
+                PanTiltRange pantilt = JsonUtility.FromJson<PanTiltRange>(RangePT);
+
+                XRMode_Manager.MinPan = pantilt.Min_Pan;
+                XRMode_Manager.MaxPan = pantilt.Max_Pan;
+                XRMode_Manager.MinTilt = pantilt.Min_Tilt;
+                XRMode_Manager.MaxTilt = pantilt.Max_Tilt;
+                XRMode_Manager.TotalPan = pantilt.ChangeValue_x;
+                XRMode_Manager.TotalTilt = pantilt.ChangeValue_y;
+                GameManager.waitingTime = pantilt.WaitingTime;
+                GameManager.startlabel_x = (uint)pantilt.StartPosition_x;
+                GameManager.startlabel_y = (uint)pantilt.StartPosition_y;
+                SunAPITest.CCTVControl.url = pantilt.CCTVURL_1;
+
+                for (int index = 0; index < allstr_json.Length - 2; index++)
+                {
+                    XRModeLabelPosition labelPosition = JsonUtility.FromJson<XRModeLabelPosition>(allstr_json[index]);
+
+                    for (int sindex = 0; sindex < gamemanager.label.Label_Position.Length; sindex++)
                     {
-                        RangePT = allstr_json[index];
+                        if (sindex == index)
+                        {
+                            gamemanager.label.Label_Position[sindex] = new Vector3(labelPosition.Label_X * XRMode_Manager.TotalPan, labelPosition.Label_Y * XRMode_Manager.TotalTilt, 0);
+                            //gamemanager.label.Label_Scale[sindex] = new Vector3(labelPosition.LabelScale, labelPosition.LabelScale, labelPosition.LabelScale);
+                        }
                     }
                 }
             }
-            
-            PanTiltRange pantilt = JsonUtility.FromJson<PanTiltRange>(RangePT);
-
-            XRMode_Manager.MinPan = pantilt.Min_Pan;
-            XRMode_Manager.MaxPan = pantilt.Max_Pan;
-            XRMode_Manager.MinTilt = pantilt.Min_Tilt;
-            XRMode_Manager.MaxTilt = pantilt.Max_Tilt;
-            XRMode_Manager.TotalPan = pantilt.ChangeValue_x;
-            XRMode_Manager.TotalTilt = pantilt.ChangeValue_y;
-            GameManager.waitingTime = pantilt.WaitingTime;
-            GameManager.startlabel_x = (uint)pantilt.StartPosition_x;
-            GameManager.startlabel_y = (uint)pantilt.StartPosition_y;
-            SunAPITest.CCTVControl.url = pantilt.CCTVURL;
-
-            for (int index = 0; index < allstr_json.Length - 2; index++)
+            else
             {
-                XRModeLabelPosition labelPosition = JsonUtility.FromJson<XRModeLabelPosition>(allstr_json[index]);
-
-                for (int sindex = 0; sindex < gamemanager.label.Label_Position.Length; sindex++)
+                gamemanager.WriteErrorLog(LogSendServer.ErrorLogCode.UnLoad_ARModeLabelPosition, "UnLoad_ARModeLabelPosition", GetType().ToString());
+                GameManager.AnyError = true;
+                /// 에러로그만 보내고 정상작동할지 아니면 에러로그 보내고 ClearMode로 전환해서 할지
+            }
+        } else if(SunAPITest.CCTVControl.SwitchiingCCTV == true)
+        {
+            if (File.Exists(Application.dataPath + ("/XRModeLabelPosition_" + ContentsInfo.ContentsName + ".json")))
+            {
+                Allstr = File.ReadAllText(Application.dataPath + ("/XRModeLabelPosition_" + ContentsInfo.ContentsName + ".json"));
+                gamemanager.WriteLog(LogSendServer.NormalLogCode.Load_ARModeLabelPosition, "Load_XRModeLabelPosition", GetType().ToString());
+                gamemanager.label.Label_Position = new Vector3[gamemanager.label.Label_total.Count];
+                if (Allstr.Contains("}"))
                 {
-                    if (sindex == index)
+                    allstr_json = Allstr.Split('}');
+
+                    for (int index = -1; index < allstr_json.Length - 1; index++)
                     {
-                        gamemanager.label.Label_Position[sindex] = new Vector3(labelPosition.Label_X * XRMode_Manager.TotalPan, labelPosition.Label_Y * XRMode_Manager.TotalTilt, 0);
-                        //gamemanager.label.Label_Scale[sindex] = new Vector3(labelPosition.LabelScale, labelPosition.LabelScale, labelPosition.LabelScale);
+                        if (index < allstr_json.Length - 2)
+                        {
+                            allstr_json[index + 1] = allstr_json[index + 1] + "}";
+                        }
+                        else if (index == allstr_json.Length - 2)
+                        {
+                            RangePT = allstr_json[index];
+                        }
                     }
                 }
+
+                PanTiltRange pantilt = JsonUtility.FromJson<PanTiltRange>(RangePT);
+
+                XRMode_Manager.MinPan_1 = pantilt.Min_Pan;
+                XRMode_Manager.MaxPan_1 = pantilt.Max_Pan;
+                XRMode_Manager.MinTilt_1 = pantilt.Min_Tilt;
+                XRMode_Manager.MaxTilt_1 = pantilt.Max_Tilt;
+                XRMode_Manager.TotalPan_1 = pantilt.ChangeValue_x;
+                XRMode_Manager.TotalTilt_1 = pantilt.ChangeValue_y;
+                GameManager.waitingTime = pantilt.WaitingTime;
+                XRMode_Manager.StartPosition_x_1 = (uint)pantilt.StartPosition_x;
+                XRMode_Manager.StartPosition_y_1 = (uint)pantilt.StartPosition_y;
+                SunAPITest.CCTVControl.firsturl = pantilt.CCTVURL_1;
+
+                Allstr_1 = File.ReadAllText(Application.dataPath + ("/XRModeLabelPosition_" + ContentsInfo.ContentsName + "_1.json"));
+                gamemanager.WriteLog(LogSendServer.NormalLogCode.Load_ARModeLabelPosition, "Load_XRModeLabelPosition", GetType().ToString());
+                if (Allstr_1.Contains("}"))
+                {
+                    allstr_json_1 = Allstr_1.Split('}');
+
+                    for (int index = -1; index < allstr_json_1.Length - 1; index++)
+                    {
+                        if (index < allstr_json_1.Length - 2)
+                        {
+                            allstr_json_1[index + 1] = allstr_json_1[index + 1] + "}";
+                        }
+                        else if (index == allstr_json_1.Length - 2)
+                        {
+                            RangePT_1 = allstr_json_1[index];
+                        }
+                    }
+                }
+
+                PanTiltRange pantilt_1 = JsonUtility.FromJson<PanTiltRange>(RangePT_1);
+
+                XRMode_Manager.MinPan_2 = pantilt_1.Min_Pan;
+                XRMode_Manager.MaxPan_2 = pantilt_1.Max_Pan;
+                XRMode_Manager.MinTilt_2 = pantilt_1.Min_Tilt;
+                XRMode_Manager.MaxTilt_2 = pantilt_1.Max_Tilt;
+                XRMode_Manager.TotalPan_2 = pantilt_1.ChangeValue_x;
+                XRMode_Manager.TotalTilt_2 = pantilt_1.ChangeValue_y;
+                XRMode_Manager.StartPosition_x_2 = (uint)pantilt_1.StartPosition_x;
+                XRMode_Manager.StartPosition_y_2 = (uint)pantilt_1.StartPosition_y;
+                SunAPITest.CCTVControl.secondurl = pantilt_1.CCTVURL_1;
+
+                //for (int index = 0; index < allstr_json_1.Length - 2; index++)
+                //{
+                //    XRModeLabelPosition labelPosition = JsonUtility.FromJson<XRModeLabelPosition>(allstr_json_1[index]);
+
+                //    for (int sindex = 0; sindex < gamemanager.label.Label_Position.Length; sindex++)
+                //    {
+                //        if (sindex == index)
+                //        {
+                //            gamemanager.label.Label_Position[sindex] = new Vector3(labelPosition.Label_X * XRMode_Manager.TotalPan, labelPosition.Label_Y * XRMode_Manager.TotalTilt, 0);
+                //            //gamemanager.label.Label_Scale[sindex] = new Vector3(labelPosition.LabelScale, labelPosition.LabelScale, labelPosition.LabelScale);
+                //        }
+                //    }
+                //}
             }
-        }
-        else
-        {
-            gamemanager.WriteErrorLog(LogSendServer.ErrorLogCode.UnLoad_ARModeLabelPosition, "UnLoad_ARModeLabelPosition", GetType().ToString());
-            GameManager.AnyError = true;
-            /// 에러로그만 보내고 정상작동할지 아니면 에러로그 보내고 ClearMode로 전환해서 할지
+            else
+            {
+                gamemanager.WriteErrorLog(LogSendServer.ErrorLogCode.UnLoad_ARModeLabelPosition, "UnLoad_ARModeLabelPosition", GetType().ToString());
+                GameManager.AnyError = true;
+                /// 에러로그만 보내고 정상작동할지 아니면 에러로그 보내고 ClearMode로 전환해서 할지
+            }
         }
     }
     

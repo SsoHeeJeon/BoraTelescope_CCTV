@@ -38,9 +38,9 @@ public class PanTiltRange
     public float ChangeValue_x;
     public float ChangeValue_y;
     public int WaitingTime;
-    public string CCTVURL;
+    public string CCTVURL_1;
 
-    public PanTiltRange(float minx, float maxx, float miny, float maxy, float startlabel_x, float startlabel_y, float valueX, float valueY, int waittime, string url)
+    public PanTiltRange(float minx, float maxx, float miny, float maxy, float startlabel_x, float startlabel_y, float valueX, float valueY, int waittime, string url_1)
     {
         Min_Pan = minx;
         Max_Pan = maxx;
@@ -51,7 +51,7 @@ public class PanTiltRange
         ChangeValue_x = valueX;
         ChangeValue_y = valueY;
         WaitingTime = waittime;
-        CCTVURL = url;
+        CCTVURL_1 = url_1;
     }
 }
 
@@ -171,6 +171,10 @@ public class GameManager : ContentsInfo
 
     public AudioSource ButtonEffect;
     public AudioClip ButtonSound;
+
+    public Sprite HomeBase;
+    public Sprite HomeBase_1;
+    public Sprite HomeBase_2;
 
     float count;
     bool entermode = false;
@@ -374,6 +378,12 @@ public class GameManager : ContentsInfo
                 //PantiltOrigin.State = PantiltOrigin.OriginState.SetOrigin;
                 //pantiltorigin.StartOrigin = false;
                 //pantiltorigin.FinishOrigin = false;
+
+                if(CCTVViewer.switchinglist == CCTVViewer.SwitchingList.Second)
+                {
+                    xrmode.cctvcontrol.monitor.SwitchingCCTV();
+                }
+
                 Debug.Log("today waiting");
                 Loading.nextScene = "WaitingMode";
                 SceneManager.LoadScene("WaitingMode");
@@ -536,11 +546,11 @@ public class GameManager : ContentsInfo
                     }
                 }
                 MenuBar.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.SetActive(true);
-                xrmode.AllMapLabels.gameObject.SetActive(false);
-                if (xrmode.AllMapLabels.transform.parent.childCount != 0)
+                if (xrmode.AllMapLabels.transform.parent.childCount != 1)
                 {
                     xrmode.AllMapLabels.transform.parent.GetChild(1).gameObject.SetActive(false);
                 }
+                xrmode.AllMapLabels.gameObject.SetActive(false);
                 Arrow.SetActive(true);
 
                 if (allbar.NaviRect.sizeDelta.x > AllBarOnOff.barClose)
@@ -1698,8 +1708,9 @@ public class GameManager : ContentsInfo
             //PanTiltControl.SetFreq(PanTiltControl.Motor.Tilt, PanTiltControl.Speed.Fast);
             //gamemanager.speed_enum = GameManager.Speed_enum.fast;
             //PanTiltControl.SetPulse((uint)startlabel_x, (uint)startlabel_y);
+            xrmode.cctvcontrol.GOPanTilt((uint)startlabel_x, (uint)startlabel_y);
 
-            if (!Tip_Obj.activeSelf)        // Tip 이미지가 비활성화상태면 활성화
+            if (!Tip_Obj.activeSelf && ContentsInfo.ContentsName != "Woosuk")        // Tip 이미지가 비활성화상태면 활성화
             {
                 Tipbtn.transform.GetChild(0).gameObject.SetActive(true);
                 Tip_Obj.SetActive(true);

@@ -22,11 +22,19 @@ public static class Extensions
 }
 public class CCTVViewer : MonoBehaviour
 {
+    public enum SwitchingList
+    {
+        None, First, Second
+    }
+    public static SwitchingList switchinglist;
+
     NetworkStream stream;
     //tcp
     const string serverIP = "127.0.0.1";
+    int purposeport = 8002;
     const int port = 8002;
     const int orderport = 8003;
+    const int secondport = 8004;
 
     TcpClient orderClient;
     TcpClient Client;
@@ -49,6 +57,20 @@ public class CCTVViewer : MonoBehaviour
     // Start is called before the first frame update
     public void ReadytoStart()
     {
+        if (SunAPITest.CCTVControl.SwitchiingCCTV == true)
+        {
+            XRMode_Manager.MinPan = XRMode_Manager.MinPan_1;
+            XRMode_Manager.MaxPan = XRMode_Manager.MaxPan_1;
+            XRMode_Manager.MinTilt = XRMode_Manager.MinTilt_1;
+            XRMode_Manager.MaxTilt = XRMode_Manager.MaxTilt_1;
+            GameManager.startlabel_x = (uint)XRMode_Manager.StartPosition_x_1;
+            GameManager.startlabel_y = (uint)XRMode_Manager.StartPosition_y_1;
+            XRMode_Manager.TotalPan = XRMode_Manager.TotalPan_1;
+            XRMode_Manager.TotalTilt = XRMode_Manager.TotalTilt_1;
+
+            SunAPITest.CCTVControl.url = SunAPITest.CCTVControl.firsturl;
+            switchinglist = SwitchingList.First;
+        }
         SpinCam();
 
         playertexture = new Texture2D(camWidth, camHeight, TextureFormat.RGB24, false);
@@ -80,6 +102,10 @@ public class CCTVViewer : MonoBehaviour
     {
         if (queue_bytes.Count > 0)
         {
+            if (SwitchingImage != null && SwitchingImage.activeSelf)
+            {
+                SwitchingImage.SetActive(false);
+            }
             SeeCameraImage(queue_bytes.Dequeue());
         }
 
@@ -103,7 +129,7 @@ public class CCTVViewer : MonoBehaviour
         //}
 
         if (Client == null)
-            Client = new TcpClient(serverIP, port);
+            Client = new TcpClient(serverIP, purposeport);
         //Debug.Log(port);
         //logsave.WriteLog(LogSendServer.NormalLogCode.Connect_Camera, "Connect_Camera_On", GetType().ToString());
 
@@ -139,16 +165,23 @@ public class CCTVViewer : MonoBehaviour
         {
             if (Client != null)
             {
-                stream = Client.GetStream();
-                //recevBuffer = new byte[DataSize];
-                stream.Read(recevBuffer, 0, recevBuffer.Length); // stream에 있던 바이트배열 내려서 새로 선언한 바이트배열에 넣기
-                if (recevBuffer == null) return;
-                //Debug.Log(recevBuffer.Length);
-                ChangeRGB(recevBuffer);
-                queue_bytes.Enqueue(BGRData);       // recevBuffer의 크기를 할당해놓으면 stream.Read를 통해 자동으로 저장
-                //alreadysend = false;
+                try
+                {
+                    stream = Client.GetStream();
+                    //recevBuffer = new byte[DataSize];
+                    stream.Read(recevBuffer, 0, recevBuffer.Length); // stream에 있던 바이트배열 내려서 새로 선언한 바이트배열에 넣기
+                    if (recevBuffer == null) return;
+                    //Debug.Log(recevBuffer.Length);
+                    ChangeRGB(recevBuffer);
+                    queue_bytes.Enqueue(BGRData);       // recevBuffer의 크기를 할당해놓으면 stream.Read를 통해 자동으로 저장
+                                                        //alreadysend = false;
 
-                //ConnectCamF = true;
+                    //ConnectCamF = true;
+                }
+                catch
+                {
+
+                }
             }
             else if (Client == null)
             {
@@ -333,6 +366,48 @@ public class CCTVViewer : MonoBehaviour
         playertexture.LoadRawTextureData(matData);
         playertexture.Apply();
         CCTVMonitor.texture = playertexture;
+    }
+    public GameObject SwitchingImage;
+    public void SwitchingCCTV()
+    {
+        SwitchingImage.SetActive(true);
+        Client.Close();
+        Client = null;
+        switch (switchinglist)
+        {
+            case SwitchingList.First:
+                purposeport = secondport;
+                
+                XRMode_Manager.MinPan = XRMode_Manager.MinPan_2;
+                XRMode_Manager.MaxPan = XRMode_Manager.MaxPan_2;
+                XRMode_Manager.MinTilt = XRMode_Manager.MinTilt_2;
+                XRMode_Manager.MaxTilt = XRMode_Manager.MaxTilt_2;
+                GameManager.startlabel_x = (uint)XRMode_Manager.StartPosition_x_2;
+                GameManager.startlabel_y = (uint)XRMode_Manager.StartPosition_y_2;
+                XRMode_Manager.TotalPan = XRMode_Manager.TotalPan_2;
+                XRMode_Manager.TotalTilt = XRMode_Manager.TotalTilt_2;
+
+                SunAPITest.CCTVControl.url = SunAPITest.CCTVControl.secondurl;
+                switchinglist = SwitchingList.Second;
+                break;
+            case SwitchingList.Second:
+                purposeport = port;
+                
+                XRMode_Manager.MinPan = XRMode_Manager.MinPan_1;
+                XRMode_Manager.MaxPan = XRMode_Manager.MaxPan_1;
+                XRMode_Manager.MinTilt = XRMode_Manager.MinTilt_1;
+                XRMode_Manager.MaxTilt = XRMode_Manager.MaxTilt_1;
+                GameManager.startlabel_x = (uint)XRMode_Manager.StartPosition_x_1;
+                GameManager.startlabel_y = (uint)XRMode_Manager.StartPosition_y_1;
+                XRMode_Manager.TotalPan = XRMode_Manager.TotalPan_1;
+                XRMode_Manager.TotalTilt = XRMode_Manager.TotalTilt_1;
+
+                SunAPITest.CCTVControl.url = SunAPITest.CCTVControl.firsturl;
+                switchinglist = SwitchingList.First;
+                break;
+        }
+
+        SpinCam();
     }
 
     //void MatToTexture(Mat sourceMat)

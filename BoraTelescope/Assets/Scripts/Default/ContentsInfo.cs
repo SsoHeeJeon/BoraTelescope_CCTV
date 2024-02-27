@@ -26,7 +26,7 @@ public class ContentsInfo : LogSendServer
             // ÄÜÅÙÃ÷ ¹öÀü ¼±ÅÃ
             //ContentsName = "Basic";
             ContentsName = "GoldSunset";
-            //ContentsName = "High1";
+            //ContentsName = "Woosuk";
             //ContentsName = "OceanCafe";
             //ContentsName = "Seongsan";
 
@@ -96,9 +96,39 @@ public class ContentsInfo : LogSendServer
 
                 WaitingVideo_path = (string[])GoldSunsetLabel.WaitingVideo_path.Clone();
 
-                ModeActive = new bool[GoldSunsetLabel.ModeActive.Length];
+                //ModeActive = new bool[GoldSunsetLabel.ModeActive.Length];
                 break;
-            
+            case "Woosuk":
+                WoosukLabel.LoadLabelInfo();
+
+                WriteLog(LogSendServer.NormalLogCode.Load_ResourceFile, "Load_ResourceFile", GetType().ToString());
+                label_open.Label_total = WoosukLabel.Label_total;
+                label_open.Label_Cate_1 = WoosukLabel.Label_Cate_1;
+                label_open.Label_Cate_2 = WoosukLabel.Label_Cate_2;
+
+                label_open.NaviLabel = (Sprite[])WoosukLabel.NaviLabel.Clone();
+                label_open.MapLabel = (Sprite[])WoosukLabel.MapLabel.Clone();
+                //label_open.NaviLabel_C = (Sprite[])WoosukLabel.NaviLabel_C.Clone();
+                //label_open.NaviLabel_J = (Sprite[])WoosukLabel.NaviLabel_J.Clone();
+                label_open.DetailImage = (Sprite[])WoosukLabel.DetailImage.Clone();
+                label_open.Narration_K = (AudioClip[])WoosukLabel.Narration_K.Clone();
+                label_open.Narration_E = (AudioClip[])WoosukLabel.Narration_E.Clone();
+                label_open.Narration_C = (AudioClip[])WoosukLabel.Narration_C.Clone();
+                label_open.Narration_J = (AudioClip[])WoosukLabel.Narration_J.Clone();
+
+                gamemanager.minimap.Hotspot = WoosukLabel.Label_Minimap;
+                gamemanager.minimap.hotspot_img = (Sprite[])WoosukLabel.MinimapLabel.Clone();
+                ScreenCapture.MarkImg = WoosukLabel.CaptureMark;
+
+                label_open.Tip_K = WoosukLabel.Tip_K;
+                label_open.Tip_E = WoosukLabel.Tip_E;
+                label_open.Tip_C = WoosukLabel.Tip_C;
+                label_open.Tip_J = WoosukLabel.Tip_J;
+
+                WaitingVideo_path = (string[])WoosukLabel.WaitingVideo_path.Clone();
+
+                ModeActive = new bool[WoosukLabel.ModeActive.Length];
+                break;
         }
 
         gamemanager.GetComponent<ReadJson>().Readfile();

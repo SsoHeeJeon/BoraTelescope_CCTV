@@ -26,9 +26,36 @@ public class MiniMap : MinimapCustom
                 gamemanager.WriteLog(LogSendServer.NormalLogCode.AR_FinishMinimap, "XR_FinishMinimap_(" + gamemanager.xrmode.CameraWindow.transform.localPosition.x + ", " + gamemanager.xrmode.CameraWindow.transform.localPosition.y + ")", GetType().ToString());
                 alreadyminimap = false;
             }
-            
-            minimapCamera_x = ((gamemanager.xrmode.currentMotor_x - XRMode_Manager.MinPan) / (XRMode_Manager.MaxPan - XRMode_Manager.MinPan)) * (totalminimap) - mapX.rect.width / 2 + mapCamX.rect.width / 2;
-            gamemanager.MiniMap_Camera.transform.localPosition = new Vector3(minimapCamera_x, gamemanager.MiniMap_Camera.transform.localPosition.y, gamemanager.MiniMap_Camera.transform.localPosition.z);
+
+            if (XRMode_Manager.MinPan >= 0)
+            {
+                minimapCamera_x = ((gamemanager.xrmode.currentMotor_x - XRMode_Manager.MinPan) / (XRMode_Manager.MaxPan - XRMode_Manager.MinPan)) * (totalminimap) - mapX.rect.width / 2 + mapCamX.rect.width / 2;
+                //if (minimapCamera_x > 0)
+                {
+                    gamemanager.MiniMap_Camera.transform.localPosition = new Vector3(minimapCamera_x, gamemanager.MiniMap_Camera.transform.localPosition.y, gamemanager.MiniMap_Camera.transform.localPosition.z);
+                } 
+            }
+            else if (XRMode_Manager.MinPan < 0)
+            {
+                float a = gamemanager.xrmode.currentMotor_x;
+                if (gamemanager.xrmode.currentMotor_x > XRMode_Manager.MaxPan)
+                {
+                    a = gamemanager.xrmode.currentMotor_x - 360;
+                }
+
+                minimapCamera_x = ((a - XRMode_Manager.MinPan) / (XRMode_Manager.MaxPan - XRMode_Manager.MinPan)) * (totalminimap) - mapX.rect.width / 2 + mapCamX.rect.width / 2;
+                Debug.Log(minimapCamera_x);
+                if (minimapCamera_x > -470)
+                {
+                    gamemanager.MiniMap_Camera.transform.localPosition = new Vector3(minimapCamera_x, gamemanager.MiniMap_Camera.transform.localPosition.y, gamemanager.MiniMap_Camera.transform.localPosition.z);
+                }
+                else if (minimapCamera_x <= -470)
+                {
+                    gamemanager.MiniMap_Camera.transform.localPosition = new Vector3(396, gamemanager.MiniMap_Camera.transform.localPosition.y, gamemanager.MiniMap_Camera.transform.localPosition.z);
+                }
+            }
+
+
             if (gamemanager.MiniMap_CameraGuide.gameObject.activeSelf && Mathf.Abs(gamemanager.MiniMap_Camera.transform.localPosition.x - gamemanager.MiniMap_CameraGuide.transform.localPosition.x) < 0.05f)
             {
                 gamemanager.MiniMap_CameraGuide.gameObject.SetActive(false);

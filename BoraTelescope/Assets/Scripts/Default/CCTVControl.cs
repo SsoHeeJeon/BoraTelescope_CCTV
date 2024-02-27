@@ -14,7 +14,9 @@ namespace SunAPITest
     {
         public GameManager gamemanager;
         //public static string url = "http://172.30.1.8/";  //테스트 사이트
-        public static string url;  //테스트 사이트
+        public static string firsturl;  //테스트 사이트
+        public static string secondurl;  //테스트 사이트
+        public static string url;
         public static string UseUrl;
         public static string uid = "admin";
         public static string pwd = "Bora7178";
@@ -24,15 +26,16 @@ namespace SunAPITest
         public static float currentZoom;
         public float zoomFactor;
         public static float purposezoom;
+        public static bool SwitchiingCCTV = false;
 
         public CCTVViewer monitor;
 
         void Start()
         {
             gamemanager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-            monitor.ReadytoStart();
+            //monitor.ReadytoStart();
             CheckPTZ();
-
+            GOPanTilt((uint)GameManager.startlabel_x, (uint)GameManager.startlabel_y);
             //url += "/stw-cgi/ptzcontrol.cgi?msubmenu=move&action=control&MoveSpeed=10";
             //httpRequest.Request("GET", url, uid, pwd);
             //url += "/stw-cgi/ptzcontrol.cgi?msubmenu=absolute&action=control&pan=180";
@@ -57,9 +60,15 @@ namespace SunAPITest
             if (SceneManager.GetActiveScene().name.Contains("XRMode") && gamemanager != null)
             {
                 gamemanager.xrmode.currentMotor_x = float.Parse(ptzstring[0].Substring(ptzstring[0].IndexOf('=') + 1));
-                gamemanager.xrmode.currentMotor_y = float.Parse(ptzstring[1].Substring(ptzstring[1].IndexOf('=') + 1));
+
+                if(gamemanager.xrmode.currentMotor_x >= 200)
+                {
+                    gamemanager.xrmode.currentMotor_x = gamemanager.xrmode.currentMotor_x - 360;
+                }
+
+                gamemanager.xrmode.currentMotor_y = float.Parse(ptzstring[1].Substring(ptzstring[1].IndexOf('=') + 1)) * -1;
                 currentZoom = float.Parse(ptzstring[2].Substring(ptzstring[2].IndexOf('=') + 1));
-                Debug.Log("Pan : " + gamemanager.xrmode.currentMotor_x + ", Tilt : " + gamemanager.xrmode.currentMotor_y + ", Zoom : " + currentZoom);
+                //Debug.Log("Pan : " + gamemanager.xrmode.currentMotor_x + ", Tilt : " + gamemanager.xrmode.currentMotor_y + ", Zoom : " + currentZoom);
             }
             Invoke("CheckPTZ", 0.5f);
         }
@@ -80,52 +89,57 @@ namespace SunAPITest
             switch (gamemanager.MoveDir)
             {
                 case "Left":
-                    //if (gamemanager.xrmode.currentMotor_x >= XRMode_Manager.MinPan)
+                    //Debug.Log("Pan : " + gamemanager.xrmode.currentMotor_x + ", MinPan : " + XRMode_Manager.MinPan);
+                    if (gamemanager.xrmode.currentMotor_x >= XRMode_Manager.MinPan)
                     {
                         UseUrl = "http://" + url + "/stw-cgi/ptzcontrol.cgi?msubmenu=move&action=control&Direction=Left";
                         httpRequest.Request("GET", UseUrl, uid, pwd);
+                        Debug.Log(1);
                     }
-                    //else
-                    //{
-                    //    UseUrl = url + "/stw-cgi/ptzcontrol.cgi?msubmenu=move&action=control&Direction=Stop";
-                    //    httpRequest.Request("GET", UseUrl, uid, pwd);
-                    //}
+                    else
+                    {
+                        StopControl();
+                        Debug.Log(2);
+                    }
                     break;
                 case "Right":
-                    //if (gamemanager.xrmode.currentMotor_x <= XRMode_Manager.MaxPan)
+                    if (gamemanager.xrmode.currentMotor_x <= XRMode_Manager.MaxPan)
                     {
                         UseUrl = "http://" + url + "/stw-cgi/ptzcontrol.cgi?msubmenu=move&action=control&Direction=Right";
                         httpRequest.Request("GET", UseUrl, uid, pwd);
+                        Debug.Log(1);
                     }
-                    //else
-                    //{
-                    //    UseUrl = url + "/stw-cgi/ptzcontrol.cgi?msubmenu=move&action=control&Direction=Stop";
-                    //    httpRequest.Request("GET", UseUrl, uid, pwd);
-                    //}
+                    else
+                    {
+                        StopControl();
+                        Debug.Log(2);
+                    }
                     break;
                 case "Up":
-                    //if (gamemanager.xrmode.currentMotor_y < XRMode_Manager.MaxTilt)
+                    if (gamemanager.xrmode.currentMotor_y < XRMode_Manager.MaxTilt)
                     {
                         UseUrl = "http://" + url + "/stw-cgi/ptzcontrol.cgi?msubmenu=move&action=control&Direction=Up";
                         httpRequest.Request("GET", UseUrl, uid, pwd);
+                        Debug.Log(1);
                     }
-                    //else
-                    //{
-                    //    UseUrl = url + "/stw-cgi/ptzcontrol.cgi?msubmenu=move&action=control&Direction=Stop";
-                    //    httpRequest.Request("GET", UseUrl, uid, pwd);
-                    //}
+                    else
+                    {
+                        StopControl();
+                        Debug.Log(2);
+                    }
                     break;
                 case "Down":
-                    //if (gamemanager.xrmode.currentMotor_y > XRMode_Manager.MinTilt)
+                    if (gamemanager.xrmode.currentMotor_y > XRMode_Manager.MinTilt)
                     {
                         UseUrl = "http://" + url + "/stw-cgi/ptzcontrol.cgi?msubmenu=move&action=control&Direction=Down";
                         httpRequest.Request("GET", UseUrl, uid, pwd);
+                        Debug.Log(1);
                     }
-                    //else
-                    //{
-                    //    UseUrl = url + "/stw-cgi/ptzcontrol.cgi?msubmenu=move&action=control&Direction=Stop";
-                    //    httpRequest.Request("GET", UseUrl, uid, pwd);
-                    //}
+                    else
+                    {
+                        StopControl();
+                        Debug.Log(2);
+                    }
                     break;
             }
         }
