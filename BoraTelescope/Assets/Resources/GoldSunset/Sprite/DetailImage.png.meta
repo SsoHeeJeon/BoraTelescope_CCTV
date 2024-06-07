@@ -4,22 +4,22 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 9053598507471582880
-    second: DetailImage_0
+    second: DetailImage_00
   - first:
       213: 861975554022734051
-    second: DetailImage_1
+    second: DetailImage_01
   - first:
       213: 5665217911651000618
-    second: DetailImage_2
+    second: DetailImage_02
   - first:
       213: -7846761765799515725
-    second: DetailImage_3
+    second: DetailImage_03
   - first:
       213: 3555761063509483869
-    second: DetailImage_4
+    second: DetailImage_04
   - first:
       213: -6843462099810161229
-    second: DetailImage_5
+    second: DetailImage_05
   - first:
       213: -8959718627936177393
     second: DetailImage_6
@@ -28,64 +28,79 @@ TextureImporter:
     second: DetailImage_7
   - first:
       213: -1574702967806881979
-    second: DetailImage_8
+    second: DetailImage_07
   - first:
       213: -2934521321488810619
     second: DetailImage_9
   - first:
       213: 8332559972972691145
-    second: DetailImage_10
+    second: DetailImage_20
   - first:
       213: 3927709822294898328
-    second: DetailImage_11
+    second: DetailImage_07
   - first:
       213: -3787401650895959584
-    second: DetailImage_12
+    second: DetailImage_20
   - first:
       213: -5518640483689230987
-    second: DetailImage_13
+    second: DetailImage_07
   - first:
       213: 8757910097163975210
-    second: DetailImage_14
+    second: DetailImage_20
   - first:
       213: 1309842799313416497
-    second: DetailImage_15
+    second: DetailImage_07
   - first:
       213: 7240605831325192150
-    second: DetailImage_16
+    second: DetailImage_20
   - first:
       213: -8743972609550601121
-    second: DetailImage_17
+    second: DetailImage_08
   - first:
       213: -3381537869038301245
-    second: DetailImage_18
+    second: DetailImage_06
   - first:
       213: -216405631955426804
-    second: DetailImage_19
+    second: DetailImage_07
   - first:
       213: 5276013717582661928
     second: DetailImage_20
   - first:
       213: 262744449071518110
-    second: DetailImage_21
+    second: DetailImage_08
   - first:
       213: 3057320189439717636
-    second: DetailImage_22
+    second: DetailImage_06
   - first:
       213: 6961333870206301457
-    second: DetailImage_23
+    second: DetailImage_07
   - first:
       213: 4843335717784437895
-    second: DetailImage_24
+    second: DetailImage_08
   - first:
       213: -4358356194006516489
-    second: DetailImage_25
+    second: DetailImage_06
   - first:
       213: 821059647287220313
-    second: DetailImage_26
+    second: DetailImage_07
   - first:
       213: 7814383147247527544
-    second: DetailImage_27
+    second: DetailImage_08
+  - first:
+      213: -7278754263052207092
+    second: DetailImage_06
+  - first:
+      213: 3953386381810627307
+    second: DetailImage_07
+  - first:
+      213: -1036471839854925134
+    second: DetailImage_08
+  - first:
+      213: 3635764190369780596
+    second: DetailImage_09
+  - first:
+      213: -7601438838153885384
+    second: DetailImage_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -211,7 +226,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DetailImage_0
+      name: DetailImage_00
       rect:
         serializedVersion: 2
         x: 37
@@ -232,7 +247,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DetailImage_1
+      name: DetailImage_01
       rect:
         serializedVersion: 2
         x: 529
@@ -253,13 +268,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DetailImage_3
+      name: DetailImage_03
       rect:
         serializedVersion: 2
         x: 1513
-        y: 1737
+        y: 1725
         width: 474
-        height: 274
+        height: 286
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,12 +289,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DetailImage_4
+      name: DetailImage_04
       rect:
         serializedVersion: 2
-        x: 2007
+        x: 2005
         y: 1725
-        width: 472
+        width: 474
         height: 286
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -295,7 +310,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DetailImage_5
+      name: DetailImage_05
       rect:
         serializedVersion: 2
         x: 2497
@@ -316,49 +331,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DetailImage_6
-      rect:
-        serializedVersion: 2
-        x: 2989
-        y: 1725
-        width: 474
-        height: 286
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f03f966e06fa8a380800000000000000
-      internalID: -8959718627936177393
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DetailImage_7
-      rect:
-        serializedVersion: 2
-        x: 3481
-        y: 1725
-        width: 474
-        height: 286
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 72873f04c89f450f0800000000000000
-      internalID: -1129003225782716377
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DetailImage_8
+      name: DetailImage_11
       rect:
         serializedVersion: 2
         x: 37
@@ -379,7 +352,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DetailImage_10
+      name: DetailImage_12
       rect:
         serializedVersion: 2
         x: 1021
@@ -400,7 +373,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DetailImage_2
+      name: DetailImage_02
       rect:
         serializedVersion: 2
         x: 1021
@@ -421,7 +394,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DetailImage_11
+      name: DetailImage_13
       rect:
         serializedVersion: 2
         x: 1513
@@ -442,7 +415,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DetailImage_12
+      name: DetailImage_14
       rect:
         serializedVersion: 2
         x: 2005
@@ -463,7 +436,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DetailImage_13
+      name: DetailImage_15
       rect:
         serializedVersion: 2
         x: 2497
@@ -484,7 +457,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DetailImage_14
+      name: DetailImage_16
       rect:
         serializedVersion: 2
         x: 2989
@@ -505,11 +478,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DetailImage_15
+      name: DetailImage_19
       rect:
         serializedVersion: 2
         x: 3481
-        y: 1405
+        y: 1408
         width: 474
         height: 286
       alignment: 0
@@ -526,7 +499,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DetailImage_16
+      name: DetailImage_20
       rect:
         serializedVersion: 2
         x: 37
@@ -547,7 +520,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DetailImage_17
+      name: DetailImage_21
       rect:
         serializedVersion: 2
         x: 529
@@ -568,7 +541,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DetailImage_18
+      name: DetailImage_22
       rect:
         serializedVersion: 2
         x: 1021
@@ -589,7 +562,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DetailImage_19
+      name: DetailImage_23
       rect:
         serializedVersion: 2
         x: 1513
@@ -610,7 +583,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DetailImage_21
+      name: DetailImage_24
       rect:
         serializedVersion: 2
         x: 2497
@@ -631,7 +604,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DetailImage_22
+      name: DetailImage_25
       rect:
         serializedVersion: 2
         x: 2989
@@ -652,7 +625,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DetailImage_23
+      name: DetailImage_26
       rect:
         serializedVersion: 2
         x: 3481
@@ -673,7 +646,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DetailImage_24
+      name: DetailImage_27
       rect:
         serializedVersion: 2
         x: 37
@@ -694,7 +667,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DetailImage_25
+      name: DetailImage_28
       rect:
         serializedVersion: 2
         x: 529
@@ -715,7 +688,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DetailImage_26
+      name: DetailImage_29
       rect:
         serializedVersion: 2
         x: 1021
@@ -736,7 +709,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DetailImage_27
+      name: DetailImage_30
       rect:
         serializedVersion: 2
         x: 1513
@@ -752,6 +725,111 @@ TextureImporter:
       bones: []
       spriteID: 876ec7ee114427c60800000000000000
       internalID: 7814383147247527544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DetailImage_06
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 445
+        width: 474
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0cb96fef8bacfa90800000000000000
+      internalID: -7278754263052207092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DetailImage_07
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 445
+        width: 474
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be270b3e7ff3dd630800000000000000
+      internalID: 3953386381810627307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DetailImage_08
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 445
+        width: 474
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba60c56a56bd91f0800000000000000
+      internalID: -1036471839854925134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DetailImage_09
+      rect:
+        serializedVersion: 2
+        x: 1513
+        y: 445
+        width: 474
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 473931e9444d47230800000000000000
+      internalID: 3635764190369780596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DetailImage_10
+      rect:
+        serializedVersion: 2
+        x: 2005
+        y: 445
+        width: 474
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 839cafd96a3428690800000000000000
+      internalID: -7601438838153885384
       vertices: []
       indices: 
       edges: []

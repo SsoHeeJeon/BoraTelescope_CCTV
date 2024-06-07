@@ -190,5 +190,11 @@ namespace SunAPITest
             UseUrl = "http://" + url + "/stw-cgi/ptzcontrol.cgi?msubmenu=absolute&action=control&Zoom=" + zoom.ToString();
             httpRequest.Request("GET", UseUrl, uid, pwd);
         }
+
+        public void WiperStart()
+        {
+            UseUrl = "http://" + url + "/stw-cgi/ptzcontrol.cgi?msubmenu=aux&action=control&Command=WiperOn";
+            httpRequest.Request("GET", UseUrl, uid, pwd);
+        }
     }
 }

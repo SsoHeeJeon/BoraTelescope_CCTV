@@ -28,10 +28,10 @@ TextureImporter:
     second: MapLabel_7
   - first:
       213: 5292833506388998029
-    second: MapLabel_08
+    second: MapLabel_8
   - first:
       213: 8467259429681972283
-    second: MapLabel_09
+    second: MapLabel_9
   - first:
       213: 9095268244150380874
     second: MapLabel_10
@@ -371,6 +371,69 @@ TextureImporter:
       bones: []
       spriteID: 81bf713fdcdee1840800000000000000
       internalID: 5196852488834644760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapLabel_8
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1572
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d87f99b080ce37940800000000000000
+      internalID: 5292833506388998029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapLabel_9
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1520
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b34454ff69fb18570800000000000000
+      internalID: 8467259429681972283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapLabel_10
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1468
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a49697d7742e83e70800000000000000
+      internalID: 9095268244150380874
       vertices: []
       indices: 
       edges: []

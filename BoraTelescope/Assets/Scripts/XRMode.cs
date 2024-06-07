@@ -17,6 +17,7 @@ public class XRMode : MonoBehaviour
     public GameObject SelectLabel;
 
     public GameObject XRToggle;
+    public GameObject WiperBtn;
 
     public float xpulse;
     public float ypulse;
@@ -69,16 +70,18 @@ public class XRMode : MonoBehaviour
         {
             AllMapLabels.transform.parent.gameObject.GetComponent<BehindLabel>().ReadytoStart();
             BehindLabel.ReadLabelPosition();
-        } else if(ContentsInfo.ContentsName == "Aegibong" || ContentsInfo.ContentsName == "Typhoon")
+        } else if (ContentsInfo.ContentsName == "Aegibong" || ContentsInfo.ContentsName == "Typhoon")
         {
             AllMapLabels.transform.parent.gameObject.GetComponent<DisableLabel>().ReadytoStart();
             DisableLabel.ReadLabelPosition();
             //AllMapLabels.transform.parent.gameObject.GetComponent<DisableLabel>().MapLabel();
-        } else if(ContentsInfo.ContentsName == "Woosuk")
+        } else if (ContentsInfo.ContentsName == "Woosuk")
         {
-            gamemanager.Homebtn.transform.parent.gameObject.GetComponent<Image>().sprite = gamemanager.HomeBase_1;
+            gamemanager.Homebtn.transform.parent.gameObject.GetComponent<Image>().sprite = gamemanager.HomeBase_2;
             gamemanager.Homebtn.transform.parent.gameObject.GetComponent<Image>().SetNativeSize();
+            gamemanager.Homebtn.transform.parent.gameObject.SetActive(true);
             XRToggle.SetActive(true);
+            WiperBtn.SetActive(true);
             gamemanager.Tip_Obj.SetActive(false);
         }
 
@@ -248,14 +251,15 @@ public class XRMode : MonoBehaviour
 
         if (SelectLabel != null && seeDetail == true)
         {
-            if (Mathf.Abs(xpulse - currentMotor_x) < 1 && Mathf.Abs(ypulse - currentMotor_y) < 1)
+            Debug.Log(Mathf.Abs(xpulse - currentMotor_x) + "/" +Mathf.Abs(ypulse + currentMotor_y)+"/" + ypulse);
+            if (Mathf.Abs(xpulse - currentMotor_x) < 1 && Mathf.Abs(ypulse + currentMotor_y) < 1)
             //if (Mathf.Abs((SelectLabel.transform.localPosition.x + 202.0f) / ValueX - currentMotor_x) < 1 && Mathf.Abs(SelectLabel.transform.localPosition.y / ValueY - currentMotor_y) < 1)
             {
                 if (ContentsInfo.ContentsName != "Typhoon")
                 {
                     gamemanager.label.SelectLabel(SelectLabel.name);
                     gamemanager.labeldetail.DetailOpen();
-                } else if(ContentsInfo.ContentsName == "Typhoon")
+                } else if (ContentsInfo.ContentsName == "Typhoon")
                 {
                     Resetothers();
                 }
@@ -274,7 +278,7 @@ public class XRMode : MonoBehaviour
 
         Labelactive();
     }
-    
+
     public void MoveCamera_Arrow()
     {/*
         if (gamemanager.MiniMap_CameraGuide.activeSelf)
@@ -509,7 +513,7 @@ public class XRMode : MonoBehaviour
                     SelectLabel = AllMapLabels.transform.GetChild(index).gameObject;
                     xpulse = (AllMapLabels.transform.GetChild(index).gameObject.transform.localPosition.x + 202.0f) / ValueX;
                     ypulse = AllMapLabels.transform.GetChild(index).gameObject.transform.localPosition.y / ValueY;
-                    //Debug.Log("today " + AllMapLabels.transform.GetChild(index).gameObject.transform.localPosition.y + " / " + ValueY);
+                    Debug.Log("today " + AllMapLabels.transform.GetChild(index).gameObject.transform.localPosition.y + " / " + ValueY + " / " + ypulse);
                     if (xpulse != currentMotor_x || ypulse != currentMotor_y)
                     {
                         MoveCamera_Navi();
@@ -576,7 +580,7 @@ public class XRMode : MonoBehaviour
             if (xpulse >= 0)
             {
                 xpulse = xpulse;
-            } else if(xpulse < 0)
+            } else if (xpulse < 0)
             {
                 xpulse = 360 + xpulse;
             }
@@ -592,9 +596,9 @@ public class XRMode : MonoBehaviour
         }
         else
         {
-            ypulse = ypulse;
+            ypulse = -ypulse;
         }
-
+        Debug.Log(ypulse);
         //if (Mathf.Abs(currentMotor_x - xpulse) <= 2000)
         //{
         //    PanFreq = panFreq_Near;
@@ -622,7 +626,7 @@ public class XRMode : MonoBehaviour
         {
             AllMapLabels.transform.GetChild(index).gameObject.GetComponent<Button>().enabled = false;
         }
-       
+
         for (int index = 0; index < gamemanager.label.LabelsParent.transform.childCount; index++)
         {
             gamemanager.label.LabelsParent.transform.GetChild(index).gameObject.GetComponent<Button>().enabled = false;
@@ -663,7 +667,7 @@ public class XRMode : MonoBehaviour
 
                     }
                 }
-                
+
                 for (int index = 0; index < gamemanager.label.LabelsParent.transform.childCount; index++)
                 {
                     try
@@ -902,6 +906,41 @@ public class XRMode : MonoBehaviour
 
     public void SwitchingCCTV()
     {
+        XRToggle.SetActive(false);
+        WiperBtn.SetActive(false);
         cctvcontrol.monitor.SwitchingCCTV();
+        
+        if (cctvcontrol.monitor.SwitchingImage != null)
+        {
+            if (ContentsInfo.ContentsName == "Woosuk")
+            {
+                if (CCTVViewer.switchinglist == CCTVViewer.SwitchingList.First)
+                {
+                    if (GameManager.currentLang == GameManager.Language_enum.Korea)
+                    {
+                        XRToggle.GetComponent<Image>().sprite = cctvcontrol.monitor.SeeS[0];
+                    } else if(GameManager.currentLang == GameManager.Language_enum.English)
+                    {
+                        XRToggle.GetComponent<Image>().sprite = cctvcontrol.monitor.SeeS[1];
+                    }
+                }
+                else if (CCTVViewer.switchinglist == CCTVViewer.SwitchingList.Second)
+                {
+                    if (GameManager.currentLang == GameManager.Language_enum.Korea)
+                    {
+                        XRToggle.GetComponent<Image>().sprite = cctvcontrol.monitor.SeeN[0];
+                    }
+                    else if (GameManager.currentLang == GameManager.Language_enum.English)
+                    {
+                        XRToggle.GetComponent<Image>().sprite = cctvcontrol.monitor.SeeN[1];
+                    }
+                }
+            }
+        }
+    }
+
+    public void CCTVWiper()
+    {
+        cctvcontrol.WiperStart();
     }
 }

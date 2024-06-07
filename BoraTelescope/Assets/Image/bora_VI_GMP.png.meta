@@ -83,8 +83,35 @@ TextureImporter:
   - first:
       213: 5429391567327732453
     second: bora_VI_GMP_127
+  - first:
+      213: -4076947386271572999
+    second: bora_VI_GMP_79
+  - first:
+      213: 4227252060253419239
+    second: bora_VI_GMP_55
+  - first:
+      213: -2557736614999297407
+    second: bora_VI_GMP_56
+  - first:
+      213: 2471554670269037856
+    second: bora_VI_GMP_80
+  - first:
+      213: -2160707514879700033
+    second: bora_VI_GMP_81
+  - first:
+      213: 991221138153487362
+    second: bora_VI_GMP_82
+  - first:
+      213: 8360203428781494910
+    second: bora_VI_GMP_83
+  - first:
+      213: 9093342791290575754
+    second: bora_VI_GMP_84
+  - first:
+      213: -7217489532595313304
+    second: bora_VI_GMP_85
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -101,12 +128,10 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -145,8 +170,6 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
-  swizzle: 50462976
-  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -158,7 +181,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -171,7 +193,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -184,7 +205,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -197,7 +217,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -210,7 +229,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -431,7 +449,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1718
-        y: 1800
+        y: 1796
         width: 92
         height: 76
       alignment: 0
@@ -452,7 +470,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1850
-        y: 1800
+        y: 1796
         width: 92
         height: 76
       alignment: 0
@@ -536,7 +554,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1718
-        y: 1708
+        y: 1700
         width: 92
         height: 76
       alignment: 0
@@ -557,7 +575,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1850
-        y: 1708
+        y: 1700
         width: 92
         height: 76
       alignment: 0
@@ -620,7 +638,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1718
-        y: 1616
+        y: 1604
         width: 92
         height: 76
       alignment: 0
@@ -641,7 +659,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1850
-        y: 1616
+        y: 1604
         width: 92
         height: 76
       alignment: 0
@@ -704,7 +722,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1718
-        y: 1524
+        y: 1508
         width: 92
         height: 76
       alignment: 0
@@ -725,7 +743,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1850
-        y: 1524
+        y: 1508
         width: 92
         height: 76
       alignment: 0
@@ -788,7 +806,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1718
-        y: 1432
+        y: 1412
         width: 92
         height: 76
       alignment: 0
@@ -809,7 +827,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1850
-        y: 1432
+        y: 1412
         width: 92
         height: 76
       alignment: 0
@@ -1375,10 +1393,10 @@ TextureImporter:
       name: bora_VI_GMP_55
       rect:
         serializedVersion: 2
-        x: 1192
-        y: 784
-        width: 92
-        height: 72
+        x: 80
+        y: 513
+        width: 120
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1396,10 +1414,10 @@ TextureImporter:
       name: bora_VI_GMP_56
       rect:
         serializedVersion: 2
-        x: 1324
-        y: 784
-        width: 92
-        height: 72
+        x: 212
+        y: 513
+        width: 120
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1879,13 +1897,13 @@ TextureImporter:
       name: bora_VI_GMP_79
       rect:
         serializedVersion: 2
-        x: 80
-        y: 452
-        width: 80
-        height: 80
+        x: 422
+        y: 221
+        width: 188
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 30, y: 0, z: 30, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1900,10 +1918,10 @@ TextureImporter:
       name: bora_VI_GMP_80
       rect:
         serializedVersion: 2
-        x: 180
-        y: 452
-        width: 80
-        height: 80
+        x: 80
+        y: 453
+        width: 134
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1921,10 +1939,10 @@ TextureImporter:
       name: bora_VI_GMP_81
       rect:
         serializedVersion: 2
-        x: 280
-        y: 452
-        width: 80
-        height: 80
+        x: 226
+        y: 453
+        width: 122
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1942,10 +1960,10 @@ TextureImporter:
       name: bora_VI_GMP_82
       rect:
         serializedVersion: 2
-        x: 380
-        y: 452
-        width: 80
-        height: 80
+        x: 706
+        y: 513
+        width: 120
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1963,10 +1981,10 @@ TextureImporter:
       name: bora_VI_GMP_83
       rect:
         serializedVersion: 2
-        x: 480
-        y: 452
-        width: 80
-        height: 80
+        x: 838
+        y: 513
+        width: 120
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1984,10 +2002,10 @@ TextureImporter:
       name: bora_VI_GMP_84
       rect:
         serializedVersion: 2
-        x: 580
-        y: 452
-        width: 80
-        height: 80
+        x: 706
+        y: 453
+        width: 134
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2005,10 +2023,10 @@ TextureImporter:
       name: bora_VI_GMP_85
       rect:
         serializedVersion: 2
-        x: 680
-        y: 452
-        width: 80
-        height: 80
+        x: 852
+        y: 453
+        width: 122
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2018,69 +2036,6 @@ TextureImporter:
       bones: []
       spriteID: 8656e8f828356db90800000000000000
       internalID: -7217489532595313304
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bora_VI_GMP_86
-      rect:
-        serializedVersion: 2
-        x: 780
-        y: 452
-        width: 80
-        height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f400a66a8be6ddc0800000000000000
-      internalID: -3614442671258467086
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bora_VI_GMP_87
-      rect:
-        serializedVersion: 2
-        x: 880
-        y: 452
-        width: 80
-        height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 65144b5e3f5826b30800000000000000
-      internalID: 4279129878532735318
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bora_VI_GMP_88
-      rect:
-        serializedVersion: 2
-        x: 980
-        y: 452
-        width: 80
-        height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 65205b70c4d761e30800000000000000
-      internalID: 4473901045339456086
       vertices: []
       indices: 
       edges: []
@@ -2321,8 +2276,8 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1112
-        y: 116
-        width: 360
+        y: 110
+        width: 331
         height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2438,27 +2393,6 @@ TextureImporter:
       bones: []
       spriteID: 1d30758ef56b219c0800000000000000
       internalID: -3957900599469079599
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bora_VI_GMP_89
-      rect:
-        serializedVersion: 2
-        x: 1080
-        y: 452
-        width: 80
-        height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f6c6213f7354dbe40800000000000000
-      internalID: 5673767212160281711
       vertices: []
       indices: 
       edges: []
@@ -2611,321 +2545,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bora_VI_GMP_97
-      rect:
-        serializedVersion: 2
-        x: 1180
-        y: 453
-        width: 80
-        height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 120a7544517a96000800000000000000
-      internalID: 29738582337364001
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bora_VI_GMP_98
-      rect:
-        serializedVersion: 2
-        x: 1280
-        y: 453
-        width: 80
-        height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e196a8c07488b5cc0800000000000000
-      internalID: -3721230828357129954
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bora_VI_GMP_109
-      rect:
-        serializedVersion: 2
-        x: 1380
-        y: 453
-        width: 80
-        height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f11c95d1314a9f20800000000000000
-      internalID: 3430125748489032183
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bora_VI_GMP_110
-      rect:
-        serializedVersion: 2
-        x: 1480
-        y: 453
-        width: 80
-        height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 262c950a69ae283f0800000000000000
-      internalID: -899899042864446878
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bora_VI_GMP_112
-      rect:
-        serializedVersion: 2
-        x: 618
-        y: 227
-        width: 156
-        height: 60
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 390d85d26e2565fb0800000000000000
-      internalID: -4659445615911448429
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bora_VI_GMP_113
-      rect:
-        serializedVersion: 2
-        x: 893
-        y: 248
-        width: 47
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5922e76b4651e00b0800000000000000
-      internalID: -5760643351057653099
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bora_VI_GMP_114
-      rect:
-        serializedVersion: 2
-        x: 1053
-        y: 248
-        width: 47
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 887e8ad0374980810800000000000000
-      internalID: 1731797278595278728
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bora_VI_GMP_111
-      rect:
-        serializedVersion: 2
-        x: 1718
-        y: 1340
-        width: 92
-        height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a88e5474963463630800000000000000
-      internalID: 3906383846236874890
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bora_VI_GMP_115
-      rect:
-        serializedVersion: 2
-        x: 1850
-        y: 1340
-        width: 92
-        height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 234c3d4102a83b500800000000000000
-      internalID: 410823861413856306
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bora_VI_GMP_116
-      rect:
-        serializedVersion: 2
-        x: 1580
-        y: 453
-        width: 80
-        height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6932ac1d966fcaca0800000000000000
-      internalID: -6004153268840029290
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bora_VI_GMP_117
-      rect:
-        serializedVersion: 2
-        x: 1680
-        y: 453
-        width: 80
-        height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4f3ee6ebb9b117950800000000000000
-      internalID: 6444962897472709620
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bora_VI_GMP_119
-      rect:
-        serializedVersion: 2
-        x: 1780
-        y: 452
-        width: 80
-        height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fea86d5788dcd4c30800000000000000
-      internalID: 4345355201458637551
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bora_VI_GMP_120
-      rect:
-        serializedVersion: 2
-        x: 1880
-        y: 452
-        width: 80
-        height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6ff20df5649b6ee30800000000000000
-      internalID: 4532513786901311478
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bora_VI_GMP_121
-      rect:
-        serializedVersion: 2
-        x: 1718
-        y: 1248
-        width: 92
-        height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b9384ba58b5c55d0800000000000000
-      internalID: -3072480216111105608
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bora_VI_GMP_122
-      rect:
-        serializedVersion: 2
-        x: 1850
-        y: 1248
-        width: 92
-        height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f0c4c24e13f1e0ef0800000000000000
-      internalID: -140140239259939825
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: bora_VI_GMP_124
       rect:
         serializedVersion: 2
@@ -2934,7 +2553,7 @@ TextureImporter:
         width: 92
         height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2955,7 +2574,7 @@ TextureImporter:
         width: 92
         height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2963,48 +2582,6 @@ TextureImporter:
       bones: []
       spriteID: 652a936589f9bb860800000000000000
       internalID: 7546801077219861078
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bora_VI_GMP_126
-      rect:
-        serializedVersion: 2
-        x: 1718
-        y: 784
-        width: 92
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 92cd6068ab2417ca0800000000000000
-      internalID: -6020957857937695703
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bora_VI_GMP_127
-      rect:
-        serializedVersion: 2
-        x: 1850
-        y: 784
-        width: 92
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e222154dd2195b40800000000000000
-      internalID: 5429391567327732453
       vertices: []
       indices: 
       edges: []
@@ -3019,142 +2596,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      bora_VI_GMP_0: 3549283099279893074
-      bora_VI_GMP_1: 3097067498119433586
-      bora_VI_GMP_10: 2597318676014200887
-      bora_VI_GMP_100: 3433134480166795186
-      bora_VI_GMP_101: 2246374843363432690
-      bora_VI_GMP_102: 4705604016144635636
-      bora_VI_GMP_103: 6106487118692046281
-      bora_VI_GMP_104: 6491925078068125057
-      bora_VI_GMP_105: 8973476549880977804
-      bora_VI_GMP_106: -4490987941943149580
-      bora_VI_GMP_107: -6544203419268623207
-      bora_VI_GMP_108: 8801490595138605342
-      bora_VI_GMP_109: 3430125748489032183
-      bora_VI_GMP_11: 4291687627168797745
-      bora_VI_GMP_110: -899899042864446878
-      bora_VI_GMP_111: 3906383846236874890
-      bora_VI_GMP_112: -4659445615911448429
-      bora_VI_GMP_113: -5760643351057653099
-      bora_VI_GMP_114: 1731797278595278728
-      bora_VI_GMP_115: 410823861413856306
-      bora_VI_GMP_116: -6004153268840029290
-      bora_VI_GMP_117: 6444962897472709620
-      bora_VI_GMP_118: -2152425345905883775
-      bora_VI_GMP_119: 4345355201458637551
-      bora_VI_GMP_12: 679877779762131564
-      bora_VI_GMP_120: 4532513786901311478
-      bora_VI_GMP_121: -3072480216111105608
-      bora_VI_GMP_122: -140140239259939825
-      bora_VI_GMP_123: 2542102436826899594
-      bora_VI_GMP_124: 2463246636863609416
-      bora_VI_GMP_125: 7546801077219861078
-      bora_VI_GMP_126: -6020957857937695703
-      bora_VI_GMP_127: 5429391567327732453
-      bora_VI_GMP_129: -1970731201542122136
-      bora_VI_GMP_13: 3709059375851598959
-      bora_VI_GMP_14: 5987851525789100283
-      bora_VI_GMP_145: -8704353189818714311
-      bora_VI_GMP_146: -673065755502690985
-      bora_VI_GMP_15: 655216106111487416
-      bora_VI_GMP_16: 5846986027388411875
-      bora_VI_GMP_160: -1100938092664083811
-      bora_VI_GMP_161: -3957900599469079599
-      bora_VI_GMP_17: 4927947509174286030
-      bora_VI_GMP_18: 4563457350797730943
-      bora_VI_GMP_19: -4067354544133836910
-      bora_VI_GMP_2: -5012270769521548981
-      bora_VI_GMP_20: -357877983552601042
-      bora_VI_GMP_21: -4271187520484067909
-      bora_VI_GMP_22: -502896375592084326
-      bora_VI_GMP_23: -8964058843221842726
-      bora_VI_GMP_24: 7280937360058626978
-      bora_VI_GMP_25: -9217748015066322238
-      bora_VI_GMP_26: 6029759083621225174
-      bora_VI_GMP_27: 617232012678786976
-      bora_VI_GMP_28: 4572551811599251014
-      bora_VI_GMP_29: 8696976360866318676
-      bora_VI_GMP_3: -5142802085894936278
-      bora_VI_GMP_30: -2602255216263057650
-      bora_VI_GMP_31: 4818943339469789716
-      bora_VI_GMP_32: -1479389411550296492
-      bora_VI_GMP_33: -7497395856824541534
-      bora_VI_GMP_34: -4481349139497514792
-      bora_VI_GMP_35: 9133679622815151981
-      bora_VI_GMP_36: 2342254368086835478
-      bora_VI_GMP_37: 6793649156634103007
-      bora_VI_GMP_38: -974518795198706213
-      bora_VI_GMP_39: 9142366195896667426
-      bora_VI_GMP_4: -6947073181933661839
-      bora_VI_GMP_40: -1124978690580431125
-      bora_VI_GMP_41: 346834151928320859
-      bora_VI_GMP_42: 5679668621834388996
-      bora_VI_GMP_43: -187644486653811420
-      bora_VI_GMP_44: -6198716147808226896
-      bora_VI_GMP_45: 948100635982375468
-      bora_VI_GMP_46: -4502826418793112793
-      bora_VI_GMP_47: -6485276674238524845
-      bora_VI_GMP_48: 1566747701097093666
-      bora_VI_GMP_49: 1273549722239270869
-      bora_VI_GMP_5: -8598382364314345149
-      bora_VI_GMP_50: 8343131096864338008
-      bora_VI_GMP_51: 8768664394517031802
-      bora_VI_GMP_52: 1783914357281819523
-      bora_VI_GMP_53: -8991974563268413481
-      bora_VI_GMP_54: 5473077049362237906
-      bora_VI_GMP_55: 4227252060253419239
-      bora_VI_GMP_56: -2557736614999297407
-      bora_VI_GMP_57: -6215265549897182865
-      bora_VI_GMP_58: 4999289889054250303
-      bora_VI_GMP_59: 2009584492184373220
-      bora_VI_GMP_6: -6791774708163041865
-      bora_VI_GMP_60: 1300350410422271195
-      bora_VI_GMP_61: -6700309260439549628
-      bora_VI_GMP_62: 3171413751282411831
-      bora_VI_GMP_63: 8859796760119298160
-      bora_VI_GMP_64: -8201637633251628125
-      bora_VI_GMP_65: -4705555781139567172
-      bora_VI_GMP_66: -2825482120219176744
-      bora_VI_GMP_67: -1664895237830247065
-      bora_VI_GMP_68: 4812187402525738597
-      bora_VI_GMP_69: -1995406370337153705
-      bora_VI_GMP_7: 3606891080145708120
-      bora_VI_GMP_70: 7461594829792902483
-      bora_VI_GMP_71: -6854397159297348125
-      bora_VI_GMP_72: 2000629961233517097
-      bora_VI_GMP_73: -3194182895709074499
-      bora_VI_GMP_74: 6707161062710930194
-      bora_VI_GMP_75: -7960352992539144996
-      bora_VI_GMP_76: 7621771524317990592
-      bora_VI_GMP_77: -3843709788422701427
-      bora_VI_GMP_78: 4719495260235608550
-      bora_VI_GMP_79: -4076947386271572999
-      bora_VI_GMP_8: 2923355105969428082
-      bora_VI_GMP_80: 2471554670269037856
-      bora_VI_GMP_81: -2160707514879700033
-      bora_VI_GMP_82: 991221138153487362
-      bora_VI_GMP_83: 8360203428781494910
-      bora_VI_GMP_84: 9093342791290575754
-      bora_VI_GMP_85: -7217489532595313304
-      bora_VI_GMP_86: -3614442671258467086
-      bora_VI_GMP_87: 4279129878532735318
-      bora_VI_GMP_88: 4473901045339456086
-      bora_VI_GMP_89: 5673767212160281711
-      bora_VI_GMP_9: -5147401017563727164
-      bora_VI_GMP_90: -3968693695017296354
-      bora_VI_GMP_91: -3022420463842273730
-      bora_VI_GMP_92: -3153013572753905373
-      bora_VI_GMP_93: -7162672454025484853
-      bora_VI_GMP_94: 9090236499629468265
-      bora_VI_GMP_95: 759183352442985282
-      bora_VI_GMP_96: -1731277574097531947
-      bora_VI_GMP_97: 29738582337364001
-      bora_VI_GMP_98: -3721230828357129954
-      bora_VI_GMP_99: 908076544631785776
-  mipmapLimitGroupName: 
+  spritePackingTag: 
   pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

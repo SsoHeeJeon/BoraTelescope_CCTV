@@ -54,6 +54,9 @@ public class CCTVViewer : MonoBehaviour
     VideoCapture capture = new VideoCapture();
     Media media;
 
+    public Sprite[] SeeN = new Sprite[4];
+    public Sprite[] SeeS = new Sprite[4];
+
     // Start is called before the first frame update
     public void ReadytoStart()
     {
@@ -89,7 +92,7 @@ public class CCTVViewer : MonoBehaviour
         //PlayerRTSP();
         staticReadThread = null;
         EndThread = false;
-        if (staticReadThread is null)
+        if (staticReadThread is null && BroadcastCam.firstdontdestroy == false)
         {
             staticReadThread = new Thread(new ThreadStart(ReadImage));
             staticReadThread.Start();
@@ -102,10 +105,12 @@ public class CCTVViewer : MonoBehaviour
     {
         if (queue_bytes.Count > 0)
         {
-            if (SwitchingImage != null && SwitchingImage.activeSelf)
-            {
-                SwitchingImage.SetActive(false);
-            }
+            //if (SwitchingImage != null && SwitchingImage.activeSelf)
+            //{
+            //    //SwitchingImage.SetActive(false);
+            //    GameObject.Find("XRMode").GetComponent<XRMode>().XRToggle.SetActive(true);
+            //    GameObject.Find("XRMode").GetComponent<XRMode>().WiperBtn.SetActive(true);
+            //}
             SeeCameraImage(queue_bytes.Dequeue());
         }
 
@@ -169,8 +174,13 @@ public class CCTVViewer : MonoBehaviour
                 {
                     stream = Client.GetStream();
                     //recevBuffer = new byte[DataSize];
-                    stream.Read(recevBuffer, 0, recevBuffer.Length); // stream에 있던 바이트배열 내려서 새로 선언한 바이트배열에 넣기
-                    if (recevBuffer == null) return;
+                    int num_readdata = stream.Read(recevBuffer, 0, recevBuffer.Length); // stream에 있던 바이트배열 내려서 새로 선언한 바이트배열에 넣기
+                    if (recevBuffer == null && num_readdata ==0)
+                    {
+                        Thread.Sleep(10000);
+                        return;
+                    }
+                        
                     //Debug.Log(recevBuffer.Length);
                     ChangeRGB(recevBuffer);
                     queue_bytes.Enqueue(BGRData);       // recevBuffer의 크기를 할당해놓으면 stream.Read를 통해 자동으로 저장
@@ -408,6 +418,14 @@ public class CCTVViewer : MonoBehaviour
         }
 
         SpinCam();
+        Invoke("DelayLoading", 2f);
+    }
+
+    public void DelayLoading()
+    {
+        SwitchingImage.SetActive(false);
+        GameObject.Find("XRMode").GetComponent<XRMode>().XRToggle.SetActive(true);
+        GameObject.Find("XRMode").GetComponent<XRMode>().WiperBtn.SetActive(true);
     }
 
     //void MatToTexture(Mat sourceMat)

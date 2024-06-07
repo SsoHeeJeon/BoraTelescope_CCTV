@@ -10,7 +10,7 @@ TextureImporter:
     second: NavigationLabel_1
   - first:
       213: -513432529943635620
-    second: NavigationLabel_2
+    second: NavigationLabel_6
   - first:
       213: 6428442061037043226
     second: NavigationLabel_3
@@ -22,7 +22,7 @@ TextureImporter:
     second: NavigationLabel_5
   - first:
       213: -1174499133438584552
-    second: NavigationLabel_2
+    second: NavigationLabel_6
   - first:
       213: 7332586484725379906
     second: NavigationLabel_7
@@ -371,6 +371,69 @@ TextureImporter:
       bones: []
       spriteID: 243f2e2ee8492c560800000000000000
       internalID: 7332586484725379906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NavigationLabel_8
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1328
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac93ffdbb81e9fcd0800000000000000
+      internalID: -2523738125860128310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NavigationLabel_9
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1248
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e54b5c234eee4e0800000000000000
+      internalID: -1950370681888416229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NavigationLabel_10
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1168
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5389eaa0ffbc047c0800000000000000
+      internalID: -4089044165396096971
       vertices: []
       indices: 
       edges: []

@@ -33,11 +33,11 @@ public class GoldSunsetLabel : MonoBehaviour
 
     public static void LoadLabelInfo()
     {
-        Label_total = new List<string> { "BeanGoose", "Gari", "Swan", "WCrane", "Spoonbill",
-                                         "Goshawk", "Eagle", "MallardDuck"};
-        Label_Cate_1 = new List<string> {};
-        Label_Cate_2 = new List<string> {"BeanGoose", "Gari", "Swan", "WCrane", "Spoonbill",
-                                         "Goshawk", "Eagle", "MallardDuck"};
+        Label_total = new List<string> { "BeanGoose", "Mallard", "Swan", "Sparrow", "Coot",
+                                         "Egret", "Galdae", "Gangi","Nangi","Ssuk","Budtree"};
+        Label_Cate_1 = new List<string> { "BeanGoose", "Mallard", "Swan", "Sparrow", "Coot",
+                                         "Egret" };
+        Label_Cate_2 = new List<string> { "Galdae", "Gangi", "Nangi", "Ssuk", "Budtree" };
 
         Label_Minimap = new List<string> { "UIsland", "SongakM", "Odusan" };
 

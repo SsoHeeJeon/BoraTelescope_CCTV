@@ -187,6 +187,7 @@ public class Loading : MonoBehaviour
                     }
                     else if (GameManager.ModeActive[0] == true && GameManager.ModeActive[1] == true && GameManager.ModeActive[2] == true)
                     {
+                        GameManager.MainMode = "ClearMode";
                         MoveLoading();
                     }
                 }

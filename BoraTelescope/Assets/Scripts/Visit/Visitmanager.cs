@@ -59,6 +59,7 @@ public class Visitmanager : MonoBehaviour
         {
             gamemanager.Homebtn.transform.parent.gameObject.GetComponent<Image>().sprite = gamemanager.HomeBase;
             gamemanager.Homebtn.transform.parent.gameObject.GetComponent<Image>().SetNativeSize();
+            gamemanager.Homebtn.transform.parent.gameObject.SetActive(false);
         }
 
         Right.enabled = false;

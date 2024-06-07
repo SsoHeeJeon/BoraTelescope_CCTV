@@ -767,7 +767,7 @@ public class GameManager : ContentsInfo
                         if (xrmode.AllMapLabels.activeSelf)
                         {
                             xrmode.AllMapLabels.SetActive(false);
-                            if (xrmode.AllMapLabels.transform.parent.childCount != 0)
+                            if (xrmode.AllMapLabels.transform.parent.childCount != 1)
                             {
                                 xrmode.AllMapLabels.transform.parent.GetChild(1).gameObject.SetActive(false);
                             }
